@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from datetime import datetime
 
 COMMITS_FILE = "output/commits.txt" # Updated path
-MAX_COMMITS = 10
+MAX_COMMITS = 30
 
 def load_token():
     """Loads the GitHub token from the .env.local file."""
