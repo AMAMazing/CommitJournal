@@ -1,4 +1,5 @@
 import os
+import base64 # Added for decoding README content
 from github import Github, Auth, GithubException, RateLimitExceededException
 from dotenv import load_dotenv
 from datetime import datetime
@@ -22,7 +23,7 @@ def load_token():
 def get_last_commits_via_search(token, count=MAX_COMMITS):
     """
     Fetches the last 'count' commits authored or committed by the
-    authenticated user using the GitHub Search API. Includes repo description.
+    authenticated user using the GitHub Search API. Includes repo description and README.
     """
     try:
         print("Authenticating with GitHub...")
@@ -51,21 +52,39 @@ def get_last_commits_via_search(token, count=MAX_COMMITS):
                 repo = item.repository # Get the repository object
                 repo_name = repo.full_name
                 # --- Get Repository Description ---
-                # Handle cases where description might be None or empty
                 repo_description = repo.description if repo.description else "No description available"
+                # --- Get README Content ---
+                readme_content = "Could not fetch README." # Default message
+                try:
+                    readme_file = repo.get_readme()
+                    # Decode base64 content
+                    readme_content = base64.b64decode(readme_file.content).decode('utf-8')
+                    print(f"Successfully fetched README for {repo_name}")
+                except GithubException as ge_readme:
+                    if ge_readme.status == 404:
+                        readme_content = "No README file found in this repository."
+                        print(f"No README found for {repo_name}")
+                    else:
+                        # Handle other potential GitHub errors when fetching README
+                        readme_content = f"Error fetching README: {ge_readme.status} {ge_readme.data}"
+                        print(f"Warning: GitHub API error fetching README for {repo_name}: {ge_readme.status} {ge_readme.data}")
+                except Exception as e_readme:
+                    # Catch any other unexpected error during README fetching/decoding
+                    readme_content = f"Unexpected error processing README: {e_readme}"
+                    print(f"Warning: Unexpected error processing README for {repo_name}: {e_readme}")
                 # ---
                 sha_short = item.sha[:7]
                 commit_date = item.commit.committer.date # Get the committer date
 
-                # Format the output for clarity, now including the description
+                # Format the output for clarity, now including the description and README
+                # Use parentheses for multi-line f-string
                 formatted_message = (
                     f"Repo: {repo_name}\n"
-                    # --- Add Description to output ---
                     f"Description: {repo_description}\n"
-                    # ---
                     f"SHA: {sha_short}\n"
                     f"Date: {commit_date.strftime('%Y-%m-%d %H:%M:%S %Z')}\n"
-                    f"Message:\n{message}"
+                    f"Message:\n{message}\n\n" # Double newline before README
+                    f"--- README ---\n{readme_content}" # Added README section
                 )
                 fetched_commits.append(formatted_message)
                 commits_processed += 1
@@ -124,11 +143,14 @@ def write_commits_to_file(commits, filename=COMMITS_FILE):
             os.makedirs(output_dir)
 
         print(f"Writing {len(commits)} commits to {filename}...")
+        # Use 'w' mode which overwrites the file. Ensure utf-8 encoding.
+        # Python's text mode handles line endings (\n -> \r\n on Windows)
         with open(filename, 'w', encoding='utf-8') as f:
             for i, commit_details in enumerate(commits):
                 f.write(f"--- Commit {i+1} ---\n")
-                f.write(f"{commit_details}\n")
-                f.write("-" * 20 + "\n\n") # Separator
+                f.write(f"{commit_details}\n") # commit_details now includes README
+                # Use the original separator format, followed by two newlines
+                f.write("--------------------\n\n")
         print(f"Successfully wrote commits to {filename}.")
         return True
     except IOError as e:

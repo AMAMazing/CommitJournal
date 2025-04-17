@@ -1,0 +1,1624 @@
+--- Commit 1 ---
+Repo: AMAMazing/gemini-computer-use
+Description: Free computer use, will probably cause an AI apocolypse so best to watch over it.
+SHA: 60a1f2d
+Date: 2025-04-15 15:10:39 UTC+10:00
+Message:
+Next: Use an existing chrome extension
+
+--- README ---
+No README file found in this repository.
+--------------------
+
+--- Commit 2 ---
+Repo: AMAMazing/CommitJournal
+Description: This repo makes a nice sounding Journal of what you have commit on github since you've last run the code.
+SHA: 57a9cfa
+Date: 2025-04-15 14:03:44 UTC+10:00
+Message:
+Good progress | Next get readme if exists
+
+--- README ---
+No README file found in this repository.
+--------------------
+
+--- Commit 3 ---
+Repo: AMAMazing/orchid-jewerly
+Description: No description available
+SHA: b0dba43
+Date: 2025-04-15 12:38:43 UTC+10:00
+Message:
+Auth work, other fails
+
+--- README ---
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## Getting Started
+
+First, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+--------------------
+
+--- Commit 4 ---
+Repo: AMAMazing/DailyCodeYT
+Description: A script for making my new series on coding everyday
+SHA: 962208d
+Date: 2025-04-14 23:45:28 UTC+10:00
+Message:
+Smething broke tho
+
+--- README ---
+No README file found in this repository.
+--------------------
+
+--- Commit 5 ---
+Repo: AMAMazing/gemini-computer-use
+Description: Free computer use, will probably cause an AI apocolypse so best to watch over it.
+SHA: 451f0ac
+Date: 2025-04-14 23:44:06 UTC+10:00
+Message:
+Enter Update
+
+--- README ---
+No README file found in this repository.
+--------------------
+
+--- Commit 6 ---
+Repo: AMAMazing/DailyCodeYT
+Description: A script for making my new series on coding everyday
+SHA: 3b71088
+Date: 2025-04-13 22:14:13 UTC+10:00
+Message:
+Alot of changes
+
+--- README ---
+No README file found in this repository.
+--------------------
+
+--- Commit 7 ---
+Repo: AMAMazing/gemini-computer-use
+Description: Free computer use, will probably cause an AI apocolypse so best to watch over it.
+SHA: 1d23b57
+Date: 2025-04-12 22:21:08 UTC+10:00
+Message:
+Attemptes
+
+--- README ---
+No README file found in this repository.
+--------------------
+
+--- Commit 8 ---
+Repo: AMAMazing/CommitJournal
+Description: This repo makes a nice sounding Journal of what you have commit on github since you've last run the code.
+SHA: 065925a
+Date: 2025-04-11 18:33:05 UTC+10:00
+Message:
+Added src and output folders to clean up the repo
+
+--- README ---
+No README file found in this repository.
+--------------------
+
+--- Commit 9 ---
+Repo: AMAMazing/CommitJournal
+Description: This repo makes a nice sounding Journal of what you have commit on github since you've last run the code.
+SHA: f5761fb
+Date: 2025-04-10 20:22:04 UTC+10:00
+Message:
+Progress
+
+--- README ---
+No README file found in this repository.
+--------------------
+
+--- Commit 10 ---
+Repo: AMAMazing/AMAMazing
+Description: My personal repo
+SHA: df4da89
+Date: 2025-04-10 12:18:41 UTC+10:00
+Message:
+Update README.md
+
+--- README ---
+# 👋 Hi there, I'm AMAMazing! 
+
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=ffffff&center=true&vCenter=true&random=false&width=435&lines=Full+Stack+Developer;CSS+Enthusiast;NextJS+Enthusiast;Python+Automation+Expert;FFmpeg+Wizard;AI/LLM+Expert" alt="Typing SVG" />
+</div>
+
+# 🚀 About Me
+I'm an independent programmer and entrepreneur passionate about crafting elegant solutions through code. I specialize in developing AI tools, automation scripts, and web applications that enhance productivity and efficiency.
+
+
+Currently focused on:
+- 🖋️ Developing AI & LLM tools
+- 🌐 Web Development with NextJS
+- 📱 App Development with Expo
+- 🎨 Creating beautiful UIs with CSS
+- 🤖 Building automation tools with Python
+- 🎥 Automating video creation with FFmpeg
+
+# 🌍 Things I've Built
+
+## 🌐 Websites
+
+- **Thai Learning App**: A platform to learn Thai language effectively.  
+  [https://thailang.vercel.app/](https://thailang.vercel.app/)
+
+- **Buy Me a Boba**: A fun way to support my work by buying me boba!  
+  [https://www.buymeaboba.com/](https://www.buymeaboba.com/)
+
+## 🐍 Python Packages
+
+- **Optimisewait**: A Python utility for automated image detection and clicking.  
+  [https://pypi.org/project/optimisewait/](https://pypi.org/project/optimisewait/)
+
+- **Talktollm**: Python library for using web interfaces with LLMs (Deepseek and Gemini).   
+  [https://pypi.org/project/talktollm/](https://pypi.org/project/talktollm/)
+  
+- **Pacetype**: Type text and emojis character-by-character using clipboard paste.    
+  [https://pypi.org/project/pacetype/](https://pypi.org/project/pacetype/)
+
+- **Smartpaste**: Paste anything, reliably. This Python library uses the system clipboard for cross-platform (Win/Mac/Linux) text input, ensuring emojis and complex characters work correctly. Automatically saves/restores clipboard. Ideal for GUI automation.
+  [https://pypi.org/project/smartpaste/](https://pypi.org/project/smartpaste/)
+
+## 🪽 Chrome Extensions
+
+- **Gemini Copy Button Mover**: Moves the copy rendered button to next to the like and dislike buttons on Google AI Studio
+  [https://chromewebstore.google.com/detail/gemini-copy-button-mover/dhoblhgambngmgkijdjlgacgmeeeienm](https://chromewebstore.google.com/detail/gemini-copy-button-mover/dhoblhgambngmgkijdjlgacgmeeeienm)
+
+## 👨‍💻 VSCode Extensions 
+
+- **Codespace Assistant**: A VSCode sidebar extension to let you code easier with GitHub codespaces
+  [https://marketplace.visualstudio.com/items?itemName=AMAMazing.codespace-assistant](https://marketplace.visualstudio.com/items?itemName=AMAMazing.codespace-assistant)
+
+
+## 📱 Apps
+
+Coming soon!
+
+# 🛠️ Technologies & Tools
+```
+javascript
+const myTechStack = {
+    languages: ['JavaScript', 'TypeScript', 'Python', 'CSS'],
+    frameworks: ['Next.js', 'Expo', 'Flask'],
+    tools: ['Git', 'VSCode', 'PyAutoGUI', 'FFmpeg'],
+    LLM: ['Gemini],
+};
+```
+                           
+
+# 📊 GitHub & LeetCode Stats
+
+<div align="center">
+  <!-- Githubs Stats Card -->
+  <a href="https://github.com/DenverCoder1/github-readme-streak-stats" target="_blank">
+    <img src="https://github-readme-streak-stats-eight.vercel.app/?user=AMAMazing&theme=ocean-gradient&background=45%2C00B6EB%2CB100EB" alt="Github Stats" />
+  </a>
+</div>
+
+<div align="center">
+  <!-- LeetCode Stats Card -->
+  <a href="https://leetcode.com/u/AMAMazing" target="_blank">
+    <img src="https://leetcard.jacoblin.cool/AMAMazing?theme=dark&font=Fira%20Code&ext=heatmap&border=30363D&background=0D1117&radius=16" alt="LeetCode Stats" />
+  </a>
+</div>
+
+
+
+--------------------
+
+--- Commit 11 ---
+Repo: AMAMazing/optimisewait
+Description: A Python utility function for automated image detection and clicking using PyAutoGUI.
+SHA: 546a355
+Date: 2025-04-10 12:16:46 UTC+10:00
+Message:
+Update README.md
+
+--- README ---
+# OptimiseWait
+
+[![PyPI version](https://badge.fury.io/py/optimisewait.svg)](https://badge.fury.io/py/optimisewait)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+A Python utility function for automated image detection and clicking using PyAutoGUI.
+
+## Installation
+
+```bash
+# Install from PyPI
+pip install optimisewait
+
+# Or install from source
+git clone https://github.com/AMAMazing/optimisewait.git
+cd optimisewait
+pip install .
+```
+
+## Quick Start
+
+```python
+from optimisewait import optimiseWait, set_autopath, set_altpath
+
+# Set default path for all subsequent optimiseWait calls
+set_autopath(r'D:\Images')
+
+# Optional: Set an alternative path for fallback image search
+set_altpath(r'D:\Images\Alt')
+
+# Basic usage - wait for image and click
+result = optimiseWait('button')  # Looks for button.png in D:\Images, then D:\Images\Alt if not found
+# Returns {'found': True, 'image': 'button'} if found
+```
+
+## Usage Examples
+
+```python
+# Override default path for specific call
+result = optimiseWait('button', autopath=r'D:\OtherImages')
+
+# Specify both main and alternative paths for specific call
+result = optimiseWait('button', autopath=r'D:\Images', altpath=r'D:\Images\Alt')
+
+# Don't wait for image (check if image exists)
+result = optimiseWait('button', dontwait=True)
+# Returns {'found': False, 'image': None} if not found
+
+# Multiple click options
+optimiseWait('button', clicks=2)  # Double click
+optimiseWait('button', clicks=3)  # Triple click
+optimiseWait('button', clicks=0)  # No click, just wait for image
+
+# Multiple images to search for
+result = optimiseWait(['button', 'alt1', 'alt2'])  # Will click first image found
+# Returns {'found': True, 'image': 'alt1'} if alt1 was found first
+
+# Different clicks per image
+optimiseWait(['button', 'alt1', 'alt2'], clicks=[2, 3, 1])  # Different clicks per image
+
+# Offset clicking - single value
+optimiseWait('button', xoff=10, yoff=20)  # Click 10px right, 20px down from center
+
+# Offset clicking - multiple values for different images
+optimiseWait(['button1', 'button2'], xoff=[10, 20], yoff=[5, 15])  # Different offsets per image
+optimiseWait(['button1', 'button2', 'button3'], xoff=[10, 20])  # Remaining offsets default to 0
+```
+
+## Functions
+
+### set_autopath(path)
+Sets the default path for image files that will be used by all subsequent optimiseWait calls.
+- `path`: String. Directory path where image files are located.
+
+### set_altpath(path)
+Sets the default alternative path for image files. If an image is not found in the main path, it will be searched for in this alternative path.
+- `path`: String. Directory path for alternative image files location.
+
+### optimiseWait(filename, ...)
+Main function for image detection and clicking.
+
+## Parameters
+
+- `filename`: String or list of strings. Image filename(s) without .png extension
+- `dontwait`: Boolean (default False). If True, don't wait for image to appear
+- `specreg`: Tuple (default None). Specific region to search in (x, y, width, height)
+- `clicks`: Integer or list (default 1). Number of clicks per image (0 = no click, 1 = single, 2 = double, 3 = triple)
+- `xoff`: Integer or list (default 0). X offset from center for clicking. Can be different for each image
+- `yoff`: Integer or list (default 0). Y offset from center for clicking. Can be different for each image
+- `autopath`: String (optional). Directory containing image files. If not provided, uses path set by set_autopath()
+- `altpath`: String (optional). Alternative directory for image files. If an image is not found in autopath, it will be searched for here. If not provided, uses path set by set_altpath()
+
+## Return Value
+
+Returns a dictionary with:
+- `found`: Boolean indicating if any image was found
+- `image`: String name of the found image, or None if no image was found
+
+## Notes
+
+- All image files should be PNG format
+- Images are searched with 90% confidence level
+- Function will wait indefinitely until image is found (unless dontwait=True)
+- When using multiple images, it will try each in order until one is found
+- Images are first searched in the main path (autopath), then in the alternative path (altpath) if not found
+- If clicks is a single integer, it applies to the first found image (others default to 1 click)
+- If clicks is a list shorter than filename list, remaining images default to 1 click
+- If xoff/yoff are single integers, same offset applies to all images
+- If xoff/yoff are lists shorter than filename list, remaining offsets default to 0
+- Click offsets are calculated from the center of the found image
+- Default image paths can be set once using set_autopath() and set_altpath() and reused across multiple calls
+
+## Dependencies
+
+- PyAutoGUI >= 0.9.53
+
+## License
+
+MIT License
+
+--------------------
+
+--- Commit 12 ---
+Repo: AMAMazing/talktollm
+Description: Python library for using web interfaces with LLMs (Deepseek and Gemini).
+SHA: 2caad27
+Date: 2025-04-10 12:16:21 UTC+10:00
+Message:
+Update README.md
+
+--- README ---
+# talktollm
+
+[![PyPI version](https://badge.fury.io/py/talktollm.svg)](https://badge.fury.io/py/talktollm)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+A Python utility for interacting with large language models (LLMs) through a command-line interface. It leverages image recognition to automate interactions with LLM web interfaces, enabling seamless conversations and task execution.
+
+## Features
+
+-   **Command-Line Interaction:** Provides a simple and intuitive command-line interface for interacting with LLMs.
+-   **Automated Image Recognition:** Employs image recognition techniques (via `optimisewait`) to identify and interact with elements on the LLM interface. Includes fallback if `optimisewait` is not installed.
+-   **Multi-LLM Support:** Currently supports DeepSeek and Gemini.
+-   **Automated Conversations:** Facilitates automated conversations and task execution by simulating user interactions.
+-   **Image Support:** Allows sending images (base64 encoded) to the LLM.
+-   **Robust Clipboard Handling:** Includes configurable retry mechanisms (default 5 retries) for setting text/images to the clipboard and reading text from the clipboard to handle access errors and timing issues.
+-   **Dynamic Image Path Management:** Copies necessary recognition images to a temporary directory, ensuring they are accessible and up-to-date.
+-   **Easy to use:** Designed for simple setup and usage.
+
+## Core Functionality
+
+The core function is `talkto(llm, prompt, imagedata=None, debug=False, tabswitch=True, read_retries=5, read_delay=0.3)`.
+
+**Arguments:**
+
+-   `llm` (str): The LLM name ('deepseek' or 'gemini').
+-   `prompt` (str): The text prompt.
+-   `imagedata` (list[str] | None): Optional list of base64 encoded image strings (e.g., "data:image/png;base64,...").
+-   `debug` (bool): Enable detailed console output. Defaults to `False`.
+-   `tabswitch` (bool): Switch focus back to the previous window after closing the LLM tab. Defaults to `True`.
+-   `read_retries` (int): Number of attempts to read the final response from the clipboard. Defaults to 5.
+-   `read_delay` (float): Delay in seconds between clipboard read attempts. Defaults to 0.3.
+
+**Steps:**
+
+1.  Validates the LLM name.
+2.  Sets up image paths for `optimisewait` using `set_image_path`.
+3.  Opens the LLM's website in a new browser tab.
+4.  Waits and clicks the message input area using `optimiseWait('message', clicks=2)`.
+5.  If `imagedata` is provided:
+    -   Iterates through images.
+    -   Sets each image to the clipboard using `set_clipboard_image` (with retries).
+    -   Pastes the image (`Ctrl+V`).
+    -   Waits for potential upload (`sleep(7)`).
+6.  Sets the `prompt` text to the clipboard using `set_clipboard` (with retries).
+7.  Pastes the prompt (`Ctrl+V`).
+8.  Waits and clicks the 'run' button using `optimiseWait('run')`.
+9.  Waits for the response generation, using `optimiseWait('copy')` as an indicator that the response is ready and the copy button is visible.
+10. Waits briefly (`sleep(0.5)`) after `optimiseWait('copy')` clicks the copy button.
+11. Closes the browser tab (`Ctrl+W`).
+12. Switches focus back if `tabswitch` is `True` (`Alt+Tab`).
+13. Attempts to read the LLM's response from the clipboard with retry logic (`read_retries`, `read_delay`).
+14. Returns the retrieved text response, or an empty string if reading fails.
+
+## Helper Functions
+
+**Clipboard Handling:**
+
+-   `set_clipboard(text: str, retries: int = 5, delay: float = 0.2)`: Sets text to the clipboard, handling `CF_UNICODETEXT`. Retries on common access errors (`winerror 5` or `1418`).
+-   `set_clipboard_image(image_data: str, retries: int = 5, delay: float = 0.2)`: Sets a base64 encoded image to the clipboard (`CF_DIB` format). Decodes, converts to BMP, and retries on common access errors.
+
+**Image Path Management:**
+
+-   `set_image_path(llm: str, debug: bool = False)`: Orchestrates copying images.
+-   `copy_images_to_temp(llm: str, debug: bool = False)`: Copies necessary `.png` images for the specified `llm` from the package's `images/<llm>` directory to a temporary location (`%TEMP%\\talktollm_images\\<llm>`). Creates the temporary directory if needed and only copies if the source file is newer or the destination doesn't exist. Sets the `optimisewait` autopath. Includes error handling for missing package resources.
+
+## Installation
+
+```
+pip install talktollm
+```
+
+*Note: Requires `optimisewait` for image recognition. Install separately if needed (`pip install optimisewait`).*
+
+## Usage
+
+Here are some examples of how to use `talktollm`.
+
+**Example 1: Simple Text Prompt**
+
+Send a basic text prompt to Gemini.
+
+```python
+import talktollm
+
+prompt_text = "Explain quantum entanglement in simple terms."
+response = talktollm.talkto('gemini', prompt_text)
+print("--- Simple Gemini Response ---")
+print(response)
+```
+
+**Example 2: Text Prompt with Debugging**
+
+Send a text prompt and enable debugging output to see more details about the process.
+
+```python
+import talktollm
+
+prompt_text = "What are the main features of Python 3.12?"
+response = talktollm.talkto('deepseek', prompt_text, debug=True)
+print("--- DeepSeek Debug Response ---")
+print(response)
+```
+
+**Example 3: Preparing Image Data**
+
+Load an image file, encode it in base64, and format it correctly for the `imagedata` argument.
+
+```python
+import base64
+import io
+from PIL import Image
+
+# Load your image (replace 'path/to/your/image.png' with the actual path)
+try:
+    with open("path/to/your/image.png", "rb") as image_file:
+        # Encode to base64
+        encoded_string = base64.b64encode(image_file.read()).decode('utf-8')
+        # Format as a data URI
+        image_data_uri = f"data:image/png;base64,{encoded_string}"
+        print("Image prepared successfully!")
+        # You can now pass [image_data_uri] to the imagedata parameter
+except FileNotFoundError:
+    print("Error: Image file not found. Please check the path.")
+    image_data_uri = None
+except Exception as e:
+    print(f"Error processing image: {e}")
+    image_data_uri = None
+
+# This 'image_data_uri' variable holds the string needed for the next example
+```
+
+**Example 4: Text and Image Prompt**
+
+Send a text prompt along with a prepared image to Gemini. (Assumes `image_data_uri` was successfully created in Example 3).
+
+```python
+import talktollm
+
+# Assuming image_data_uri is available from the previous example
+if image_data_uri:
+    prompt_text = "Describe the main subject of this image."
+    response = talktollm.talkto(
+        'gemini',
+        prompt_text,
+        imagedata=[image_data_uri], # Pass the image data as a list
+        debug=True
+    )
+    print("--- Gemini Image Response ---")
+    print(response)
+else:
+    print("Skipping image example because image data is not available.")
+```
+
+## Dependencies
+
+-   `pywin32`: For Windows API access (clipboard).
+-   `pyautogui`: For GUI automation (keystrokes, potentially mouse if `optimisewait` fails).
+-   `Pillow`: For image processing (opening, converting for clipboard).
+-   `optimisewait` (Optional but Recommended): For robust image-based waiting and clicking.
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+MIT
+
+--------------------
+
+--- Commit 13 ---
+Repo: AMAMazing/SmartPaste
+Description: Paste anything, reliably. This Python library uses the system clipboard for cross-platform (Win/Mac/Linux) text input, ensuring emojis and complex characters work correctly. Automatically saves/restores clipboard. Ideal for GUI automation.
+SHA: efbd0c8
+Date: 2025-04-10 12:15:34 UTC+10:00
+Message:
+Update README.md
+
+--- README ---
+# SmartPaste
+
+[![PyPI version](https://badge.fury.io/py/smartpaste.svg)](https://badge.fury.io/py/smartpaste)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Paste anything, reliably. This Python library uses the system clipboard for cross-platform (Win/Mac/Linux) text input, ensuring emojis and complex characters work correctly. Automatically saves/restores clipboard. Ideal for GUI automation.
+
+## Features
+
+*   **Reliable Pasting:** Uses the system clipboard (copy/paste) which is generally the most robust way to handle complex characters, emojis, and different scripts compared to simulated typing.
+*   **Cross-Platform:** Automatically detects the OS (Windows, macOS, Linux) and uses the correct paste shortcut (`Ctrl+V` or `Cmd+V`).
+*   **Clipboard Preservation:** Saves the current clipboard content before pasting and restores it afterward, minimizing disruption to the user's workflow.
+*   **Error Handling:** Includes basic error handling for clipboard operations.
+*   **Configurable Delay:** Allows adding a small delay after pasting to ensure the target application processes the input, especially useful for large text blocks or slower applications.
+
+## Installation
+
+```bash
+pip install smartpaste
+```
+
+## Usage
+
+Import the package and call it directly with the text you want to paste:
+
+```python
+import smartpaste # Import the package
+import time
+
+# Give yourself time to focus the target input field
+print("Focus the target input field now. Pasting in 5 seconds...")
+time.sleep(5)
+
+text_to_paste = "Hello, world! 👋 This text will be pasted reliably."
+try:
+    # Call the package directly!
+    smartpaste(text_to_paste)
+    # You can still optionally provide a delay:
+    # smartpaste("Some text", delay_after_paste=0.2)
+    print("Pasting successful!")
+except Exception as e:
+    print(f"An error occurred: {e}")
+
+# The original function is still accessible if needed:
+# smartpaste.reliable_paste_text("Original function call")
+```
+
+**Important:** The script requires a target input field (like a text editor, browser address bar, etc.) to have focus *before* the paste function is called.
+
+## How it Works
+
+The package uses a callable class instance assigned to `sys.modules[__name__]` in its `__init__.py`. When you call `smartpaste(...)`, it invokes the `__call__` method of this instance, which in turn calls the underlying `reliable_paste_text` function.
+
+1.  **Save Clipboard:** Reads and stores the current clipboard content.
+2.  **Copy Target Text:** Copies the desired text to the clipboard.
+3.  **Paste:** Simulates the platform-specific paste keyboard shortcut (e.g., `Ctrl+V` or `Cmd+V`).
+4.  **Delay (Optional):** Pauses briefly to allow the paste action to complete.
+5.  **Restore Clipboard:** Copies the original content back to the clipboard.
+
+## Dependencies
+
+*   [pyperclip](https://pypi.org/project/pyperclip/)
+*   [PyAutoGUI](https://pypi.org/project/PyAutoGUI/)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+--------------------
+
+--- Commit 14 ---
+Repo: AMAMazing/SmartPaste
+Description: Paste anything, reliably. This Python library uses the system clipboard for cross-platform (Win/Mac/Linux) text input, ensuring emojis and complex characters work correctly. Automatically saves/restores clipboard. Ideal for GUI automation.
+SHA: 65e49bf
+Date: 2025-04-10 12:14:28 UTC+10:00
+Message:
+0.1.2 | Initital
+
+--- README ---
+# SmartPaste
+
+[![PyPI version](https://badge.fury.io/py/smartpaste.svg)](https://badge.fury.io/py/smartpaste)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Paste anything, reliably. This Python library uses the system clipboard for cross-platform (Win/Mac/Linux) text input, ensuring emojis and complex characters work correctly. Automatically saves/restores clipboard. Ideal for GUI automation.
+
+## Features
+
+*   **Reliable Pasting:** Uses the system clipboard (copy/paste) which is generally the most robust way to handle complex characters, emojis, and different scripts compared to simulated typing.
+*   **Cross-Platform:** Automatically detects the OS (Windows, macOS, Linux) and uses the correct paste shortcut (`Ctrl+V` or `Cmd+V`).
+*   **Clipboard Preservation:** Saves the current clipboard content before pasting and restores it afterward, minimizing disruption to the user's workflow.
+*   **Error Handling:** Includes basic error handling for clipboard operations.
+*   **Configurable Delay:** Allows adding a small delay after pasting to ensure the target application processes the input, especially useful for large text blocks or slower applications.
+
+## Installation
+
+```bash
+pip install smartpaste
+```
+
+## Usage
+
+Import the package and call it directly with the text you want to paste:
+
+```python
+import smartpaste # Import the package
+import time
+
+# Give yourself time to focus the target input field
+print("Focus the target input field now. Pasting in 5 seconds...")
+time.sleep(5)
+
+text_to_paste = "Hello, world! 👋 This text will be pasted reliably."
+try:
+    # Call the package directly!
+    smartpaste(text_to_paste)
+    # You can still optionally provide a delay:
+    # smartpaste("Some text", delay_after_paste=0.2)
+    print("Pasting successful!")
+except Exception as e:
+    print(f"An error occurred: {e}")
+
+# The original function is still accessible if needed:
+# smartpaste.reliable_paste_text("Original function call")
+```
+
+**Important:** The script requires a target input field (like a text editor, browser address bar, etc.) to have focus *before* the paste function is called.
+
+## How it Works
+
+The package uses a callable class instance assigned to `sys.modules[__name__]` in its `__init__.py`. When you call `smartpaste(...)`, it invokes the `__call__` method of this instance, which in turn calls the underlying `reliable_paste_text` function.
+
+1.  **Save Clipboard:** Reads and stores the current clipboard content.
+2.  **Copy Target Text:** Copies the desired text to the clipboard.
+3.  **Paste:** Simulates the platform-specific paste keyboard shortcut (e.g., `Ctrl+V` or `Cmd+V`).
+4.  **Delay (Optional):** Pauses briefly to allow the paste action to complete.
+5.  **Restore Clipboard:** Copies the original content back to the clipboard.
+
+## Dependencies
+
+*   [pyperclip](https://pypi.org/project/pyperclip/)
+*   [PyAutoGUI](https://pypi.org/project/PyAutoGUI/)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+--------------------
+
+--- Commit 15 ---
+Repo: AMAMazing/SmartPaste
+Description: Paste anything, reliably. This Python library uses the system clipboard for cross-platform (Win/Mac/Linux) text input, ensuring emojis and complex characters work correctly. Automatically saves/restores clipboard. Ideal for GUI automation.
+SHA: 4816a8d
+Date: 2025-04-10 11:28:20 UTC+10:00
+Message:
+Initial commit
+
+--- README ---
+# SmartPaste
+
+[![PyPI version](https://badge.fury.io/py/smartpaste.svg)](https://badge.fury.io/py/smartpaste)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Paste anything, reliably. This Python library uses the system clipboard for cross-platform (Win/Mac/Linux) text input, ensuring emojis and complex characters work correctly. Automatically saves/restores clipboard. Ideal for GUI automation.
+
+## Features
+
+*   **Reliable Pasting:** Uses the system clipboard (copy/paste) which is generally the most robust way to handle complex characters, emojis, and different scripts compared to simulated typing.
+*   **Cross-Platform:** Automatically detects the OS (Windows, macOS, Linux) and uses the correct paste shortcut (`Ctrl+V` or `Cmd+V`).
+*   **Clipboard Preservation:** Saves the current clipboard content before pasting and restores it afterward, minimizing disruption to the user's workflow.
+*   **Error Handling:** Includes basic error handling for clipboard operations.
+*   **Configurable Delay:** Allows adding a small delay after pasting to ensure the target application processes the input, especially useful for large text blocks or slower applications.
+
+## Installation
+
+```bash
+pip install smartpaste
+```
+
+## Usage
+
+Import the package and call it directly with the text you want to paste:
+
+```python
+import smartpaste # Import the package
+import time
+
+# Give yourself time to focus the target input field
+print("Focus the target input field now. Pasting in 5 seconds...")
+time.sleep(5)
+
+text_to_paste = "Hello, world! 👋 This text will be pasted reliably."
+try:
+    # Call the package directly!
+    smartpaste(text_to_paste)
+    # You can still optionally provide a delay:
+    # smartpaste("Some text", delay_after_paste=0.2)
+    print("Pasting successful!")
+except Exception as e:
+    print(f"An error occurred: {e}")
+
+# The original function is still accessible if needed:
+# smartpaste.reliable_paste_text("Original function call")
+```
+
+**Important:** The script requires a target input field (like a text editor, browser address bar, etc.) to have focus *before* the paste function is called.
+
+## How it Works
+
+The package uses a callable class instance assigned to `sys.modules[__name__]` in its `__init__.py`. When you call `smartpaste(...)`, it invokes the `__call__` method of this instance, which in turn calls the underlying `reliable_paste_text` function.
+
+1.  **Save Clipboard:** Reads and stores the current clipboard content.
+2.  **Copy Target Text:** Copies the desired text to the clipboard.
+3.  **Paste:** Simulates the platform-specific paste keyboard shortcut (e.g., `Ctrl+V` or `Cmd+V`).
+4.  **Delay (Optional):** Pauses briefly to allow the paste action to complete.
+5.  **Restore Clipboard:** Copies the original content back to the clipboard.
+
+## Dependencies
+
+*   [pyperclip](https://pypi.org/project/pyperclip/)
+*   [PyAutoGUI](https://pypi.org/project/PyAutoGUI/)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+--------------------
+
+--- Commit 16 ---
+Repo: AMAMazing/DailyCodeYT
+Description: A script for making my new series on coding everyday
+SHA: 9265c64
+Date: 2025-04-09 21:27:38 UTC+10:00
+Message:
+For daily commit
+
+--- README ---
+No README file found in this repository.
+--------------------
+
+--- Commit 17 ---
+Repo: AMAMazing/CommitJournal
+Description: This repo makes a nice sounding Journal of what you have commit on github since you've last run the code.
+SHA: 121a947
+Date: 2025-04-08 15:27:24 UTC+10:00
+Message:
+Done
+
+--- README ---
+No README file found in this repository.
+--------------------
+
+--- Commit 18 ---
+Repo: AMAMazing/CommitJournal
+Description: This repo makes a nice sounding Journal of what you have commit on github since you've last run the code.
+SHA: cca39e9
+Date: 2025-04-08 15:11:07 UTC+10:00
+Message:
+Initial commit
+
+--- README ---
+No README file found in this repository.
+--------------------
+
+--- Commit 19 ---
+Repo: AMAMazing/DailyCodeYT
+Description: A script for making my new series on coding everyday
+SHA: bc8db40
+Date: 2025-04-07 22:28:55 UTC+10:00
+Message:
+Working updates
+
+--- README ---
+No README file found in this repository.
+--------------------
+
+--- Commit 20 ---
+Repo: AMAMazing/DailyCodeYT
+Description: A script for making my new series on coding everyday
+SHA: 4c8d91b
+Date: 2025-04-06 22:19:36 UTC+10:00
+Message:
+Bug but progress i think
+
+--- README ---
+No README file found in this repository.
+--------------------
+
+--- Commit 21 ---
+Repo: AMAMazing/DailyCodeYT
+Description: A script for making my new series on coding everyday
+SHA: c2ed719
+Date: 2025-04-06 21:18:03 UTC+10:00
+Message:
+Before big update
+
+--- README ---
+No README file found in this repository.
+--------------------
+
+--- Commit 22 ---
+Repo: AMAMazing/autoleetcodetrack
+Description: No description available
+SHA: 69ad9d2
+Date: 2025-04-06 21:13:16 UTC+10:00
+Message:
+DONE
+
+--- README ---
+No README file found in this repository.
+--------------------
+
+--- Commit 23 ---
+Repo: AMAMazing/AMAMazing
+Description: My personal repo
+SHA: 10e1891
+Date: 2025-04-05 14:53:47 UTC+11:00
+Message:
+Update README.md
+
+--- README ---
+# 👋 Hi there, I'm AMAMazing! 
+
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=ffffff&center=true&vCenter=true&random=false&width=435&lines=Full+Stack+Developer;CSS+Enthusiast;NextJS+Enthusiast;Python+Automation+Expert;FFmpeg+Wizard;AI/LLM+Expert" alt="Typing SVG" />
+</div>
+
+# 🚀 About Me
+I'm an independent programmer and entrepreneur passionate about crafting elegant solutions through code. I specialize in developing AI tools, automation scripts, and web applications that enhance productivity and efficiency.
+
+
+Currently focused on:
+- 🖋️ Developing AI & LLM tools
+- 🌐 Web Development with NextJS
+- 📱 App Development with Expo
+- 🎨 Creating beautiful UIs with CSS
+- 🤖 Building automation tools with Python
+- 🎥 Automating video creation with FFmpeg
+
+# 🌍 Things I've Built
+
+## 🌐 Websites
+
+- **Thai Learning App**: A platform to learn Thai language effectively.  
+  [https://thailang.vercel.app/](https://thailang.vercel.app/)
+
+- **Buy Me a Boba**: A fun way to support my work by buying me boba!  
+  [https://www.buymeaboba.com/](https://www.buymeaboba.com/)
+
+## 🐍 Python Packages
+
+- **Optimisewait**: A Python utility for automated image detection and clicking.  
+  [https://pypi.org/project/optimisewait/](https://pypi.org/project/optimisewait/)
+
+- **Talktollm**: Python library for using web interfaces with LLMs (Deepseek and Gemini).   
+  [https://pypi.org/project/talktollm/](https://pypi.org/project/talktollm/)
+  
+- **Pacetype**: Type text and emojis character-by-character using clipboard paste.    
+  [https://pypi.org/project/pacetype/](https://pypi.org/project/pacetype/)
+
+- **Smartpaste**: Paste anything, reliably. This Python library uses the system clipboard for cross-platform (Win/Mac/Linux) text input, ensuring emojis and complex characters work correctly. Automatically saves/restores clipboard. Ideal for GUI automation.
+  [https://pypi.org/project/smartpaste/](https://pypi.org/project/smartpaste/)
+
+## 🪽 Chrome Extensions
+
+- **Gemini Copy Button Mover**: Moves the copy rendered button to next to the like and dislike buttons on Google AI Studio
+  [https://chromewebstore.google.com/detail/gemini-copy-button-mover/dhoblhgambngmgkijdjlgacgmeeeienm](https://chromewebstore.google.com/detail/gemini-copy-button-mover/dhoblhgambngmgkijdjlgacgmeeeienm)
+
+## 👨‍💻 VSCode Extensions 
+
+- **Codespace Assistant**: A VSCode sidebar extension to let you code easier with GitHub codespaces
+  [https://marketplace.visualstudio.com/items?itemName=AMAMazing.codespace-assistant](https://marketplace.visualstudio.com/items?itemName=AMAMazing.codespace-assistant)
+
+
+## 📱 Apps
+
+Coming soon!
+
+# 🛠️ Technologies & Tools
+```
+javascript
+const myTechStack = {
+    languages: ['JavaScript', 'TypeScript', 'Python', 'CSS'],
+    frameworks: ['Next.js', 'Expo', 'Flask'],
+    tools: ['Git', 'VSCode', 'PyAutoGUI', 'FFmpeg'],
+    LLM: ['Gemini],
+};
+```
+                           
+
+# 📊 GitHub & LeetCode Stats
+
+<div align="center">
+  <!-- Githubs Stats Card -->
+  <a href="https://github.com/DenverCoder1/github-readme-streak-stats" target="_blank">
+    <img src="https://github-readme-streak-stats-eight.vercel.app/?user=AMAMazing&theme=ocean-gradient&background=45%2C00B6EB%2CB100EB" alt="Github Stats" />
+  </a>
+</div>
+
+<div align="center">
+  <!-- LeetCode Stats Card -->
+  <a href="https://leetcode.com/u/AMAMazing" target="_blank">
+    <img src="https://leetcard.jacoblin.cool/AMAMazing?theme=dark&font=Fira%20Code&ext=heatmap&border=30363D&background=0D1117&radius=16" alt="LeetCode Stats" />
+  </a>
+</div>
+
+
+
+--------------------
+
+--- Commit 24 ---
+Repo: AMAMazing/AMAMazing
+Description: My personal repo
+SHA: a665e65
+Date: 2025-04-05 14:53:31 UTC+11:00
+Message:
+Update README.md
+
+--- README ---
+# 👋 Hi there, I'm AMAMazing! 
+
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=ffffff&center=true&vCenter=true&random=false&width=435&lines=Full+Stack+Developer;CSS+Enthusiast;NextJS+Enthusiast;Python+Automation+Expert;FFmpeg+Wizard;AI/LLM+Expert" alt="Typing SVG" />
+</div>
+
+# 🚀 About Me
+I'm an independent programmer and entrepreneur passionate about crafting elegant solutions through code. I specialize in developing AI tools, automation scripts, and web applications that enhance productivity and efficiency.
+
+
+Currently focused on:
+- 🖋️ Developing AI & LLM tools
+- 🌐 Web Development with NextJS
+- 📱 App Development with Expo
+- 🎨 Creating beautiful UIs with CSS
+- 🤖 Building automation tools with Python
+- 🎥 Automating video creation with FFmpeg
+
+# 🌍 Things I've Built
+
+## 🌐 Websites
+
+- **Thai Learning App**: A platform to learn Thai language effectively.  
+  [https://thailang.vercel.app/](https://thailang.vercel.app/)
+
+- **Buy Me a Boba**: A fun way to support my work by buying me boba!  
+  [https://www.buymeaboba.com/](https://www.buymeaboba.com/)
+
+## 🐍 Python Packages
+
+- **Optimisewait**: A Python utility for automated image detection and clicking.  
+  [https://pypi.org/project/optimisewait/](https://pypi.org/project/optimisewait/)
+
+- **Talktollm**: Python library for using web interfaces with LLMs (Deepseek and Gemini).   
+  [https://pypi.org/project/talktollm/](https://pypi.org/project/talktollm/)
+  
+- **Pacetype**: Type text and emojis character-by-character using clipboard paste.    
+  [https://pypi.org/project/pacetype/](https://pypi.org/project/pacetype/)
+
+- **Smartpaste**: Paste anything, reliably. This Python library uses the system clipboard for cross-platform (Win/Mac/Linux) text input, ensuring emojis and complex characters work correctly. Automatically saves/restores clipboard. Ideal for GUI automation.
+  [https://pypi.org/project/smartpaste/](https://pypi.org/project/smartpaste/)
+
+## 🪽 Chrome Extensions
+
+- **Gemini Copy Button Mover**: Moves the copy rendered button to next to the like and dislike buttons on Google AI Studio
+  [https://chromewebstore.google.com/detail/gemini-copy-button-mover/dhoblhgambngmgkijdjlgacgmeeeienm](https://chromewebstore.google.com/detail/gemini-copy-button-mover/dhoblhgambngmgkijdjlgacgmeeeienm)
+
+## 👨‍💻 VSCode Extensions 
+
+- **Codespace Assistant**: A VSCode sidebar extension to let you code easier with GitHub codespaces
+  [https://marketplace.visualstudio.com/items?itemName=AMAMazing.codespace-assistant](https://marketplace.visualstudio.com/items?itemName=AMAMazing.codespace-assistant)
+
+
+## 📱 Apps
+
+Coming soon!
+
+# 🛠️ Technologies & Tools
+```
+javascript
+const myTechStack = {
+    languages: ['JavaScript', 'TypeScript', 'Python', 'CSS'],
+    frameworks: ['Next.js', 'Expo', 'Flask'],
+    tools: ['Git', 'VSCode', 'PyAutoGUI', 'FFmpeg'],
+    LLM: ['Gemini],
+};
+```
+                           
+
+# 📊 GitHub & LeetCode Stats
+
+<div align="center">
+  <!-- Githubs Stats Card -->
+  <a href="https://github.com/DenverCoder1/github-readme-streak-stats" target="_blank">
+    <img src="https://github-readme-streak-stats-eight.vercel.app/?user=AMAMazing&theme=ocean-gradient&background=45%2C00B6EB%2CB100EB" alt="Github Stats" />
+  </a>
+</div>
+
+<div align="center">
+  <!-- LeetCode Stats Card -->
+  <a href="https://leetcode.com/u/AMAMazing" target="_blank">
+    <img src="https://leetcard.jacoblin.cool/AMAMazing?theme=dark&font=Fira%20Code&ext=heatmap&border=30363D&background=0D1117&radius=16" alt="LeetCode Stats" />
+  </a>
+</div>
+
+
+
+--------------------
+
+--- Commit 25 ---
+Repo: AMAMazing/Pacetype
+Description: A simple Python package to type text and emojis character-by-character with adjustable delays, using the clipboard for better compatibility.
+SHA: d2d5b94
+Date: 2025-04-05 14:29:43 UTC+11:00
+Message:
+0.3.0 | Hybrid Update
+
+--- README ---
+# Pacetype 🐢
+
+[![PyPI version](https://badge.fury.io/py/pacetype.svg)](https://badge.fury.io/py/pacetype)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Simulates typing text, including emojis and special characters, with adjustable delays for specific characters. Uses `pyautogui.typewrite()` for speed with standard characters and the clipboard for robust cross-platform compatibility with complex characters (like emojis) that often cause issues with direct key simulation.
+
+## 🤔 Why Pacetype?
+
+Automating keyboard input with libraries like `pyautogui` can be fast for standard text but tricky when dealing with emojis or complex Unicode characters. Direct key simulation (`pyautogui.typewrite`) doesn't always handle these complex characters correctly across different OSs and input methods. Conversely, simulating copy-paste for *every* character is reliable but slower.
+
+`pacetype` offers a hybrid approach:
+
+1.  It detects standard, printable characters and types them rapidly using `pyautogui.typewrite()`.
+2.  When it encounters a complex character (emoji, symbol, non-printable), it switches to the clipboard method:
+    *   Copies the single complex character to the system clipboard.
+    *   Simulates the standard "paste" keyboard shortcut (Ctrl+V or Cmd+V).
+    *   Waits for a specified `interval` (if provided) *only after pasting* a complex character.
+
+This hybrid method provides the speed of `typewrite` for normal text and the reliability of the clipboard for special characters.
+
+## 🚀 Installation
+
+```bash
+pip install pacetype
+```
+
+## ✨ Simple Usage
+
+Using pacetype is straightforward. Just import it and call it directly with the text you want to type.
+
+```python
+import pacetype
+import time
+
+# Give yourself a moment to switch to the target window
+print("Pacetyping in 3 seconds...")
+time.sleep(3)
+
+# Type text with complex characters. Delay only applies after 👋 and 🐢.
+# Standard characters are typed quickly.
+pacetype("Hello World! 👋 Fast standard text. Slow emoji... 🐢", interval=0.5)
+
+# Type text rapidly (no interval delay for clipboard pastes)
+pacetype("Typing emojis quickly! ✅🚀", interval=0.0)
+
+# Type standard text very fast (uses typewrite, interval is ignored)
+pacetype("This uses pyautogui.typewrite and is fast.", interval=0.5) # interval has no effect here
+
+print("Typing finished!")
+```
+
+### Key Points:
+
+*   **Hybrid Typing:** Standard characters are typed using the fast `pyautogui.typewrite(interval=0)`. Complex characters (emojis, etc.) are pasted via the clipboard.
+*   **Conditional Delay:** The `interval` argument (defaulting to `0.0`) applies *only* as a `time.sleep()` pause *after* a complex character has been pasted using the clipboard. It does not affect the speed of standard character typing.
+*   **Clipboard for Complexity:** The clipboard method ensures greater reliability for emojis and a wide range of special characters that `typewrite` might fail on.
+
+## ⚙️ Features
+
+*   **Hybrid Typing:** Fast typing for standard text, reliable clipboard pasting for complex characters.
+*   **Emoji & Unicode Support:** Reliably types emojis and complex characters via the clipboard.
+*   **Conditional Delay:** Control paste speed for complex characters with the optional `interval` argument.
+*   **Simple Callable API:** Just `import pacetype` and use `pacetype("your text", interval=...)`.
+*   **Cross-Platform:** Works on Windows, macOS, and Linux (thanks to `pyperclip` and `pyautogui`).
+
+## ⚠️ Important Notes
+
+*   **Window Focus:** The target application window (e.g., text editor, browser, chat) must have keyboard focus when `pacetype()` is executing.
+*   **Clipboard Use:** Pacetype uses the system clipboard when pasting complex characters. Any content you manually copy while it's pasting such a character might be overwritten. The clipboard will contain the last complex character pasted after the script finishes. Standard typing does not affect the clipboard.
+*   **Keyboard Shortcuts:** Assumes standard `Ctrl+V` (Windows/Linux) or `Cmd+V` (macOS) paste shortcuts are active.
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+--------------------
+
+--- Commit 26 ---
+Repo: AMAMazing/Pacetype
+Description: A simple Python package to type text and emojis character-by-character with adjustable delays, using the clipboard for better compatibility.
+SHA: f657c1d
+Date: 2025-04-05 12:03:48 UTC+11:00
+Message:
+0.2.0 | Big update
+
+--- README ---
+# Pacetype 🐢
+
+[![PyPI version](https://badge.fury.io/py/pacetype.svg)](https://badge.fury.io/py/pacetype)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Simulates typing text, including emojis and special characters, with adjustable delays for specific characters. Uses `pyautogui.typewrite()` for speed with standard characters and the clipboard for robust cross-platform compatibility with complex characters (like emojis) that often cause issues with direct key simulation.
+
+## 🤔 Why Pacetype?
+
+Automating keyboard input with libraries like `pyautogui` can be fast for standard text but tricky when dealing with emojis or complex Unicode characters. Direct key simulation (`pyautogui.typewrite`) doesn't always handle these complex characters correctly across different OSs and input methods. Conversely, simulating copy-paste for *every* character is reliable but slower.
+
+`pacetype` offers a hybrid approach:
+
+1.  It detects standard, printable characters and types them rapidly using `pyautogui.typewrite()`.
+2.  When it encounters a complex character (emoji, symbol, non-printable), it switches to the clipboard method:
+    *   Copies the single complex character to the system clipboard.
+    *   Simulates the standard "paste" keyboard shortcut (Ctrl+V or Cmd+V).
+    *   Waits for a specified `interval` (if provided) *only after pasting* a complex character.
+
+This hybrid method provides the speed of `typewrite` for normal text and the reliability of the clipboard for special characters.
+
+## 🚀 Installation
+
+```bash
+pip install pacetype
+```
+
+## ✨ Simple Usage
+
+Using pacetype is straightforward. Just import it and call it directly with the text you want to type.
+
+```python
+import pacetype
+import time
+
+# Give yourself a moment to switch to the target window
+print("Pacetyping in 3 seconds...")
+time.sleep(3)
+
+# Type text with complex characters. Delay only applies after 👋 and 🐢.
+# Standard characters are typed quickly.
+pacetype("Hello World! 👋 Fast standard text. Slow emoji... 🐢", interval=0.5)
+
+# Type text rapidly (no interval delay for clipboard pastes)
+pacetype("Typing emojis quickly! ✅🚀", interval=0.0)
+
+# Type standard text very fast (uses typewrite, interval is ignored)
+pacetype("This uses pyautogui.typewrite and is fast.", interval=0.5) # interval has no effect here
+
+print("Typing finished!")
+```
+
+### Key Points:
+
+*   **Hybrid Typing:** Standard characters are typed using the fast `pyautogui.typewrite(interval=0)`. Complex characters (emojis, etc.) are pasted via the clipboard.
+*   **Conditional Delay:** The `interval` argument (defaulting to `0.0`) applies *only* as a `time.sleep()` pause *after* a complex character has been pasted using the clipboard. It does not affect the speed of standard character typing.
+*   **Clipboard for Complexity:** The clipboard method ensures greater reliability for emojis and a wide range of special characters that `typewrite` might fail on.
+
+## ⚙️ Features
+
+*   **Hybrid Typing:** Fast typing for standard text, reliable clipboard pasting for complex characters.
+*   **Emoji & Unicode Support:** Reliably types emojis and complex characters via the clipboard.
+*   **Conditional Delay:** Control paste speed for complex characters with the optional `interval` argument.
+*   **Simple Callable API:** Just `import pacetype` and use `pacetype("your text", interval=...)`.
+*   **Cross-Platform:** Works on Windows, macOS, and Linux (thanks to `pyperclip` and `pyautogui`).
+
+## ⚠️ Important Notes
+
+*   **Window Focus:** The target application window (e.g., text editor, browser, chat) must have keyboard focus when `pacetype()` is executing.
+*   **Clipboard Use:** Pacetype uses the system clipboard when pasting complex characters. Any content you manually copy while it's pasting such a character might be overwritten. The clipboard will contain the last complex character pasted after the script finishes. Standard typing does not affect the clipboard.
+*   **Keyboard Shortcuts:** Assumes standard `Ctrl+V` (Windows/Linux) or `Cmd+V` (macOS) paste shortcuts are active.
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+--------------------
+
+--- Commit 27 ---
+Repo: AMAMazing/Pacetype
+Description: A simple Python package to type text and emojis character-by-character with adjustable delays, using the clipboard for better compatibility.
+SHA: 6773511
+Date: 2025-04-05 11:36:18 UTC+11:00
+Message:
+0.1.0 | Initial
+
+--- README ---
+# Pacetype 🐢
+
+[![PyPI version](https://badge.fury.io/py/pacetype.svg)](https://badge.fury.io/py/pacetype)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Simulates typing text, including emojis and special characters, with adjustable delays for specific characters. Uses `pyautogui.typewrite()` for speed with standard characters and the clipboard for robust cross-platform compatibility with complex characters (like emojis) that often cause issues with direct key simulation.
+
+## 🤔 Why Pacetype?
+
+Automating keyboard input with libraries like `pyautogui` can be fast for standard text but tricky when dealing with emojis or complex Unicode characters. Direct key simulation (`pyautogui.typewrite`) doesn't always handle these complex characters correctly across different OSs and input methods. Conversely, simulating copy-paste for *every* character is reliable but slower.
+
+`pacetype` offers a hybrid approach:
+
+1.  It detects standard, printable characters and types them rapidly using `pyautogui.typewrite()`.
+2.  When it encounters a complex character (emoji, symbol, non-printable), it switches to the clipboard method:
+    *   Copies the single complex character to the system clipboard.
+    *   Simulates the standard "paste" keyboard shortcut (Ctrl+V or Cmd+V).
+    *   Waits for a specified `interval` (if provided) *only after pasting* a complex character.
+
+This hybrid method provides the speed of `typewrite` for normal text and the reliability of the clipboard for special characters.
+
+## 🚀 Installation
+
+```bash
+pip install pacetype
+```
+
+## ✨ Simple Usage
+
+Using pacetype is straightforward. Just import it and call it directly with the text you want to type.
+
+```python
+import pacetype
+import time
+
+# Give yourself a moment to switch to the target window
+print("Pacetyping in 3 seconds...")
+time.sleep(3)
+
+# Type text with complex characters. Delay only applies after 👋 and 🐢.
+# Standard characters are typed quickly.
+pacetype("Hello World! 👋 Fast standard text. Slow emoji... 🐢", interval=0.5)
+
+# Type text rapidly (no interval delay for clipboard pastes)
+pacetype("Typing emojis quickly! ✅🚀", interval=0.0)
+
+# Type standard text very fast (uses typewrite, interval is ignored)
+pacetype("This uses pyautogui.typewrite and is fast.", interval=0.5) # interval has no effect here
+
+print("Typing finished!")
+```
+
+### Key Points:
+
+*   **Hybrid Typing:** Standard characters are typed using the fast `pyautogui.typewrite(interval=0)`. Complex characters (emojis, etc.) are pasted via the clipboard.
+*   **Conditional Delay:** The `interval` argument (defaulting to `0.0`) applies *only* as a `time.sleep()` pause *after* a complex character has been pasted using the clipboard. It does not affect the speed of standard character typing.
+*   **Clipboard for Complexity:** The clipboard method ensures greater reliability for emojis and a wide range of special characters that `typewrite` might fail on.
+
+## ⚙️ Features
+
+*   **Hybrid Typing:** Fast typing for standard text, reliable clipboard pasting for complex characters.
+*   **Emoji & Unicode Support:** Reliably types emojis and complex characters via the clipboard.
+*   **Conditional Delay:** Control paste speed for complex characters with the optional `interval` argument.
+*   **Simple Callable API:** Just `import pacetype` and use `pacetype("your text", interval=...)`.
+*   **Cross-Platform:** Works on Windows, macOS, and Linux (thanks to `pyperclip` and `pyautogui`).
+
+## ⚠️ Important Notes
+
+*   **Window Focus:** The target application window (e.g., text editor, browser, chat) must have keyboard focus when `pacetype()` is executing.
+*   **Clipboard Use:** Pacetype uses the system clipboard when pasting complex characters. Any content you manually copy while it's pasting such a character might be overwritten. The clipboard will contain the last complex character pasted after the script finishes. Standard typing does not affect the clipboard.
+*   **Keyboard Shortcuts:** Assumes standard `Ctrl+V` (Windows/Linux) or `Cmd+V` (macOS) paste shortcuts are active.
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+--------------------
+
+--- Commit 28 ---
+Repo: AMAMazing/talktollm
+Description: Python library for using web interfaces with LLMs (Deepseek and Gemini).
+SHA: db3eb8f
+Date: 2025-04-05 11:19:52 UTC+11:00
+Message:
+Updates
+
+--- README ---
+# talktollm
+
+[![PyPI version](https://badge.fury.io/py/talktollm.svg)](https://badge.fury.io/py/talktollm)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+A Python utility for interacting with large language models (LLMs) through a command-line interface. It leverages image recognition to automate interactions with LLM web interfaces, enabling seamless conversations and task execution.
+
+## Features
+
+-   **Command-Line Interaction:** Provides a simple and intuitive command-line interface for interacting with LLMs.
+-   **Automated Image Recognition:** Employs image recognition techniques (via `optimisewait`) to identify and interact with elements on the LLM interface. Includes fallback if `optimisewait` is not installed.
+-   **Multi-LLM Support:** Currently supports DeepSeek and Gemini.
+-   **Automated Conversations:** Facilitates automated conversations and task execution by simulating user interactions.
+-   **Image Support:** Allows sending images (base64 encoded) to the LLM.
+-   **Robust Clipboard Handling:** Includes configurable retry mechanisms (default 5 retries) for setting text/images to the clipboard and reading text from the clipboard to handle access errors and timing issues.
+-   **Dynamic Image Path Management:** Copies necessary recognition images to a temporary directory, ensuring they are accessible and up-to-date.
+-   **Easy to use:** Designed for simple setup and usage.
+
+## Core Functionality
+
+The core function is `talkto(llm, prompt, imagedata=None, debug=False, tabswitch=True, read_retries=5, read_delay=0.3)`.
+
+**Arguments:**
+
+-   `llm` (str): The LLM name ('deepseek' or 'gemini').
+-   `prompt` (str): The text prompt.
+-   `imagedata` (list[str] | None): Optional list of base64 encoded image strings (e.g., "data:image/png;base64,...").
+-   `debug` (bool): Enable detailed console output. Defaults to `False`.
+-   `tabswitch` (bool): Switch focus back to the previous window after closing the LLM tab. Defaults to `True`.
+-   `read_retries` (int): Number of attempts to read the final response from the clipboard. Defaults to 5.
+-   `read_delay` (float): Delay in seconds between clipboard read attempts. Defaults to 0.3.
+
+**Steps:**
+
+1.  Validates the LLM name.
+2.  Sets up image paths for `optimisewait` using `set_image_path`.
+3.  Opens the LLM's website in a new browser tab.
+4.  Waits and clicks the message input area using `optimiseWait('message', clicks=2)`.
+5.  If `imagedata` is provided:
+    -   Iterates through images.
+    -   Sets each image to the clipboard using `set_clipboard_image` (with retries).
+    -   Pastes the image (`Ctrl+V`).
+    -   Waits for potential upload (`sleep(7)`).
+6.  Sets the `prompt` text to the clipboard using `set_clipboard` (with retries).
+7.  Pastes the prompt (`Ctrl+V`).
+8.  Waits and clicks the 'run' button using `optimiseWait('run')`.
+9.  Waits for the response generation, using `optimiseWait('copy')` as an indicator that the response is ready and the copy button is visible.
+10. Waits briefly (`sleep(0.5)`) after `optimiseWait('copy')` clicks the copy button.
+11. Closes the browser tab (`Ctrl+W`).
+12. Switches focus back if `tabswitch` is `True` (`Alt+Tab`).
+13. Attempts to read the LLM's response from the clipboard with retry logic (`read_retries`, `read_delay`).
+14. Returns the retrieved text response, or an empty string if reading fails.
+
+## Helper Functions
+
+**Clipboard Handling:**
+
+-   `set_clipboard(text: str, retries: int = 5, delay: float = 0.2)`: Sets text to the clipboard, handling `CF_UNICODETEXT`. Retries on common access errors (`winerror 5` or `1418`).
+-   `set_clipboard_image(image_data: str, retries: int = 5, delay: float = 0.2)`: Sets a base64 encoded image to the clipboard (`CF_DIB` format). Decodes, converts to BMP, and retries on common access errors.
+
+**Image Path Management:**
+
+-   `set_image_path(llm: str, debug: bool = False)`: Orchestrates copying images.
+-   `copy_images_to_temp(llm: str, debug: bool = False)`: Copies necessary `.png` images for the specified `llm` from the package's `images/<llm>` directory to a temporary location (`%TEMP%\\talktollm_images\\<llm>`). Creates the temporary directory if needed and only copies if the source file is newer or the destination doesn't exist. Sets the `optimisewait` autopath. Includes error handling for missing package resources.
+
+## Installation
+
+```
+pip install talktollm
+```
+
+*Note: Requires `optimisewait` for image recognition. Install separately if needed (`pip install optimisewait`).*
+
+## Usage
+
+Here are some examples of how to use `talktollm`.
+
+**Example 1: Simple Text Prompt**
+
+Send a basic text prompt to Gemini.
+
+```python
+import talktollm
+
+prompt_text = "Explain quantum entanglement in simple terms."
+response = talktollm.talkto('gemini', prompt_text)
+print("--- Simple Gemini Response ---")
+print(response)
+```
+
+**Example 2: Text Prompt with Debugging**
+
+Send a text prompt and enable debugging output to see more details about the process.
+
+```python
+import talktollm
+
+prompt_text = "What are the main features of Python 3.12?"
+response = talktollm.talkto('deepseek', prompt_text, debug=True)
+print("--- DeepSeek Debug Response ---")
+print(response)
+```
+
+**Example 3: Preparing Image Data**
+
+Load an image file, encode it in base64, and format it correctly for the `imagedata` argument.
+
+```python
+import base64
+import io
+from PIL import Image
+
+# Load your image (replace 'path/to/your/image.png' with the actual path)
+try:
+    with open("path/to/your/image.png", "rb") as image_file:
+        # Encode to base64
+        encoded_string = base64.b64encode(image_file.read()).decode('utf-8')
+        # Format as a data URI
+        image_data_uri = f"data:image/png;base64,{encoded_string}"
+        print("Image prepared successfully!")
+        # You can now pass [image_data_uri] to the imagedata parameter
+except FileNotFoundError:
+    print("Error: Image file not found. Please check the path.")
+    image_data_uri = None
+except Exception as e:
+    print(f"Error processing image: {e}")
+    image_data_uri = None
+
+# This 'image_data_uri' variable holds the string needed for the next example
+```
+
+**Example 4: Text and Image Prompt**
+
+Send a text prompt along with a prepared image to Gemini. (Assumes `image_data_uri` was successfully created in Example 3).
+
+```python
+import talktollm
+
+# Assuming image_data_uri is available from the previous example
+if image_data_uri:
+    prompt_text = "Describe the main subject of this image."
+    response = talktollm.talkto(
+        'gemini',
+        prompt_text,
+        imagedata=[image_data_uri], # Pass the image data as a list
+        debug=True
+    )
+    print("--- Gemini Image Response ---")
+    print(response)
+else:
+    print("Skipping image example because image data is not available.")
+```
+
+## Dependencies
+
+-   `pywin32`: For Windows API access (clipboard).
+-   `pyautogui`: For GUI automation (keystrokes, potentially mouse if `optimisewait` fails).
+-   `Pillow`: For image processing (opening, converting for clipboard).
+-   `optimisewait` (Optional but Recommended): For robust image-based waiting and clicking.
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+MIT
+
+--------------------
+
+--- Commit 29 ---
+Repo: AMAMazing/Pacetype
+Description: A simple Python package to type text and emojis character-by-character with adjustable delays, using the clipboard for better compatibility.
+SHA: 9032e72
+Date: 2025-04-05 10:48:54 UTC+11:00
+Message:
+Initial commit
+
+--- README ---
+# Pacetype 🐢
+
+[![PyPI version](https://badge.fury.io/py/pacetype.svg)](https://badge.fury.io/py/pacetype)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Simulates typing text, including emojis and special characters, with adjustable delays for specific characters. Uses `pyautogui.typewrite()` for speed with standard characters and the clipboard for robust cross-platform compatibility with complex characters (like emojis) that often cause issues with direct key simulation.
+
+## 🤔 Why Pacetype?
+
+Automating keyboard input with libraries like `pyautogui` can be fast for standard text but tricky when dealing with emojis or complex Unicode characters. Direct key simulation (`pyautogui.typewrite`) doesn't always handle these complex characters correctly across different OSs and input methods. Conversely, simulating copy-paste for *every* character is reliable but slower.
+
+`pacetype` offers a hybrid approach:
+
+1.  It detects standard, printable characters and types them rapidly using `pyautogui.typewrite()`.
+2.  When it encounters a complex character (emoji, symbol, non-printable), it switches to the clipboard method:
+    *   Copies the single complex character to the system clipboard.
+    *   Simulates the standard "paste" keyboard shortcut (Ctrl+V or Cmd+V).
+    *   Waits for a specified `interval` (if provided) *only after pasting* a complex character.
+
+This hybrid method provides the speed of `typewrite` for normal text and the reliability of the clipboard for special characters.
+
+## 🚀 Installation
+
+```bash
+pip install pacetype
+```
+
+## ✨ Simple Usage
+
+Using pacetype is straightforward. Just import it and call it directly with the text you want to type.
+
+```python
+import pacetype
+import time
+
+# Give yourself a moment to switch to the target window
+print("Pacetyping in 3 seconds...")
+time.sleep(3)
+
+# Type text with complex characters. Delay only applies after 👋 and 🐢.
+# Standard characters are typed quickly.
+pacetype("Hello World! 👋 Fast standard text. Slow emoji... 🐢", interval=0.5)
+
+# Type text rapidly (no interval delay for clipboard pastes)
+pacetype("Typing emojis quickly! ✅🚀", interval=0.0)
+
+# Type standard text very fast (uses typewrite, interval is ignored)
+pacetype("This uses pyautogui.typewrite and is fast.", interval=0.5) # interval has no effect here
+
+print("Typing finished!")
+```
+
+### Key Points:
+
+*   **Hybrid Typing:** Standard characters are typed using the fast `pyautogui.typewrite(interval=0)`. Complex characters (emojis, etc.) are pasted via the clipboard.
+*   **Conditional Delay:** The `interval` argument (defaulting to `0.0`) applies *only* as a `time.sleep()` pause *after* a complex character has been pasted using the clipboard. It does not affect the speed of standard character typing.
+*   **Clipboard for Complexity:** The clipboard method ensures greater reliability for emojis and a wide range of special characters that `typewrite` might fail on.
+
+## ⚙️ Features
+
+*   **Hybrid Typing:** Fast typing for standard text, reliable clipboard pasting for complex characters.
+*   **Emoji & Unicode Support:** Reliably types emojis and complex characters via the clipboard.
+*   **Conditional Delay:** Control paste speed for complex characters with the optional `interval` argument.
+*   **Simple Callable API:** Just `import pacetype` and use `pacetype("your text", interval=...)`.
+*   **Cross-Platform:** Works on Windows, macOS, and Linux (thanks to `pyperclip` and `pyautogui`).
+
+## ⚠️ Important Notes
+
+*   **Window Focus:** The target application window (e.g., text editor, browser, chat) must have keyboard focus when `pacetype()` is executing.
+*   **Clipboard Use:** Pacetype uses the system clipboard when pasting complex characters. Any content you manually copy while it's pasting such a character might be overwritten. The clipboard will contain the last complex character pasted after the script finishes. Standard typing does not affect the clipboard.
+*   **Keyboard Shortcuts:** Assumes standard `Ctrl+V` (Windows/Linux) or `Cmd+V` (macOS) paste shortcuts are active.
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+--------------------
+
+--- Commit 30 ---
+Repo: AMAMazing/DailyCodeYT
+Description: A script for making my new series on coding everyday
+SHA: 473d616
+Date: 2025-04-05 10:48:33 UTC+11:00
+Message:
+Minor updates
+
+--- README ---
+No README file found in this repository.
+--------------------
+
