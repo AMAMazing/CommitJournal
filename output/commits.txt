@@ -1,4 +1,231 @@
 --- Commit 1 ---
+Repo: AMAMazing/CommitJournal
+Description: This repo makes a nice sounding Journal of what you have commit on github since you've last run the code.
+SHA: b3cc59f
+Date: 2025-04-17 12:03:11 UTC+10:00
+Message:
+Get readme
+
+--- README ---
+No README file found in this repository.
+--------------------
+
+--- Commit 2 ---
+Repo: AMAMazing/autothumbnail
+Description: Automatically create thumbnails and titles from a video script
+SHA: 98d3104
+Date: 2025-04-17 11:17:34 UTC+10:00
+Message:
+Initial commit
+
+--- README ---
+No README file found in this repository.
+--------------------
+
+--- Commit 3 ---
+Repo: AMAMazing/talktollm
+Description: Python library for using web interfaces with LLMs (Deepseek and Gemini).
+SHA: 8d9da3c
+Date: 2025-04-17 11:13:44 UTC+10:00
+Message:
+0.3.3 | Fixes
+
+--- README ---
+# talktollm
+
+[![PyPI version](https://badge.fury.io/py/talktollm.svg)](https://badge.fury.io/py/talktollm)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+A Python utility for interacting with large language models (LLMs) through a command-line interface. It leverages image recognition to automate interactions with LLM web interfaces, enabling seamless conversations and task execution.
+
+## Features
+
+-   **Command-Line Interaction:** Provides a simple and intuitive command-line interface for interacting with LLMs.
+-   **Automated Image Recognition:** Employs image recognition techniques (via `optimisewait`) to identify and interact with elements on the LLM interface. Includes fallback if `optimisewait` is not installed.
+-   **Multi-LLM Support:** Currently supports DeepSeek and Gemini.
+-   **Automated Conversations:** Facilitates automated conversations and task execution by simulating user interactions.
+-   **Image Support:** Allows sending images (base64 encoded) to the LLM.
+-   **Robust Clipboard Handling:** Includes configurable retry mechanisms (default 5 retries) for setting text/images to the clipboard and reading text from the clipboard to handle access errors and timing issues.
+-   **Dynamic Image Path Management:** Copies necessary recognition images to a temporary directory, ensuring they are accessible and up-to-date.
+-   **Easy to use:** Designed for simple setup and usage.
+
+## Core Functionality
+
+The core function is `talkto(llm, prompt, imagedata=None, debug=False, tabswitch=True, read_retries=5, read_delay=0.3)`.
+
+**Arguments:**
+
+-   `llm` (str): The LLM name ('deepseek' or 'gemini').
+-   `prompt` (str): The text prompt.
+-   `imagedata` (list[str] | None): Optional list of base64 encoded image strings (e.g., "data:image/png;base64,...").
+-   `debug` (bool): Enable detailed console output. Defaults to `False`.
+-   `tabswitch` (bool): Switch focus back to the previous window after closing the LLM tab. Defaults to `True`.
+-   `read_retries` (int): Number of attempts to read the final response from the clipboard. Defaults to 5.
+-   `read_delay` (float): Delay in seconds between clipboard read attempts. Defaults to 0.3.
+
+**Steps:**
+
+1.  Validates the LLM name.
+2.  Sets up image paths for `optimisewait` using `set_image_path`.
+3.  Opens the LLM's website in a new browser tab.
+4.  Waits and clicks the message input area using `optimiseWait('message', clicks=2)`.
+5.  If `imagedata` is provided:
+    -   Iterates through images.
+    -   Sets each image to the clipboard using `set_clipboard_image` (with retries).
+    -   Pastes the image (`Ctrl+V`).
+    -   Waits for potential upload (`sleep(7)`).
+6.  Sets the `prompt` text to the clipboard using `set_clipboard` (with retries).
+7.  Pastes the prompt (`Ctrl+V`).
+8.  Waits and clicks the 'run' button using `optimiseWait('run')`.
+9.  Waits for the response generation, using `optimiseWait('copy')` as an indicator that the response is ready and the copy button is visible.
+10. Waits briefly (`sleep(0.5)`) after `optimiseWait('copy')` clicks the copy button.
+11. Closes the browser tab (`Ctrl+W`).
+12. Switches focus back if `tabswitch` is `True` (`Alt+Tab`).
+13. Attempts to read the LLM's response from the clipboard with retry logic (`read_retries`, `read_delay`).
+14. Returns the retrieved text response, or an empty string if reading fails.
+
+## Helper Functions
+
+**Clipboard Handling:**
+
+-   `set_clipboard(text: str, retries: int = 5, delay: float = 0.2)`: Sets text to the clipboard, handling `CF_UNICODETEXT`. Retries on common access errors (`winerror 5` or `1418`).
+-   `set_clipboard_image(image_data: str, retries: int = 5, delay: float = 0.2)`: Sets a base64 encoded image to the clipboard (`CF_DIB` format). Decodes, converts to BMP, and retries on common access errors.
+
+**Image Path Management:**
+
+-   `set_image_path(llm: str, debug: bool = False)`: Orchestrates copying images.
+-   `copy_images_to_temp(llm: str, debug: bool = False)`: Copies necessary `.png` images for the specified `llm` from the package's `images/<llm>` directory to a temporary location (`%TEMP%\\talktollm_images\\<llm>`). Creates the temporary directory if needed and only copies if the source file is newer or the destination doesn't exist. Sets the `optimisewait` autopath. Includes error handling for missing package resources.
+
+## Installation
+
+```
+pip install talktollm
+```
+
+*Note: Requires `optimisewait` for image recognition. Install separately if needed (`pip install optimisewait`).*
+
+## Usage
+
+Here are some examples of how to use `talktollm`.
+
+**Example 1: Simple Text Prompt**
+
+Send a basic text prompt to Gemini.
+
+```python
+import talktollm
+
+prompt_text = "Explain quantum entanglement in simple terms."
+response = talktollm.talkto('gemini', prompt_text)
+print("--- Simple Gemini Response ---")
+print(response)
+```
+
+**Example 2: Text Prompt with Debugging**
+
+Send a text prompt and enable debugging output to see more details about the process.
+
+```python
+import talktollm
+
+prompt_text = "What are the main features of Python 3.12?"
+response = talktollm.talkto('deepseek', prompt_text, debug=True)
+print("--- DeepSeek Debug Response ---")
+print(response)
+```
+
+**Example 3: Preparing Image Data**
+
+Load an image file, encode it in base64, and format it correctly for the `imagedata` argument.
+
+```python
+import base64
+import io
+from PIL import Image
+
+# Load your image (replace 'path/to/your/image.png' with the actual path)
+try:
+    with open("path/to/your/image.png", "rb") as image_file:
+        # Encode to base64
+        encoded_string = base64.b64encode(image_file.read()).decode('utf-8')
+        # Format as a data URI
+        image_data_uri = f"data:image/png;base64,{encoded_string}"
+        print("Image prepared successfully!")
+        # You can now pass [image_data_uri] to the imagedata parameter
+except FileNotFoundError:
+    print("Error: Image file not found. Please check the path.")
+    image_data_uri = None
+except Exception as e:
+    print(f"Error processing image: {e}")
+    image_data_uri = None
+
+# This 'image_data_uri' variable holds the string needed for the next example
+```
+
+**Example 4: Text and Image Prompt**
+
+Send a text prompt along with a prepared image to Gemini. (Assumes `image_data_uri` was successfully created in Example 3).
+
+```python
+import talktollm
+
+# Assuming image_data_uri is available from the previous example
+if image_data_uri:
+    prompt_text = "Describe the main subject of this image."
+    response = talktollm.talkto(
+        'gemini',
+        prompt_text,
+        imagedata=[image_data_uri], # Pass the image data as a list
+        debug=True
+    )
+    print("--- Gemini Image Response ---")
+    print(response)
+else:
+    print("Skipping image example because image data is not available.")
+```
+
+## Dependencies
+
+-   `pywin32`: For Windows API access (clipboard).
+-   `pyautogui`: For GUI automation (keystrokes, potentially mouse if `optimisewait` fails).
+-   `Pillow`: For image processing (opening, converting for clipboard).
+-   `optimisewait` (Optional but Recommended): For robust image-based waiting and clicking.
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+MIT
+
+--------------------
+
+--- Commit 4 ---
+Repo: AMAMazing/DailyCodeYT
+Description: A script for making my new series on coding everyday
+SHA: 9b9e078
+Date: 2025-04-16 09:22:10 UTC+10:00
+Message:
+Prompt Fix
+
+--- README ---
+No README file found in this repository.
+--------------------
+
+--- Commit 5 ---
+Repo: AMAMazing/DailyCodeYT
+Description: A script for making my new series on coding everyday
+SHA: 7c1b7d6
+Date: 2025-04-16 00:27:16 UTC+10:00
+Message:
+fixes
+
+--- README ---
+No README file found in this repository.
+--------------------
+
+--- Commit 6 ---
 Repo: AMAMazing/gemini-computer-use
 Description: Free computer use, will probably cause an AI apocolypse so best to watch over it.
 SHA: 60a1f2d
@@ -10,7 +237,7 @@ Next: Use an existing chrome extension
 No README file found in this repository.
 --------------------
 
---- Commit 2 ---
+--- Commit 7 ---
 Repo: AMAMazing/CommitJournal
 Description: This repo makes a nice sounding Journal of what you have commit on github since you've last run the code.
 SHA: 57a9cfa
@@ -22,7 +249,7 @@ Good progress | Next get readme if exists
 No README file found in this repository.
 --------------------
 
---- Commit 3 ---
+--- Commit 8 ---
 Repo: AMAMazing/orchid-jewerly
 Description: No description available
 SHA: b0dba43
@@ -70,7 +297,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 --------------------
 
---- Commit 4 ---
+--- Commit 9 ---
 Repo: AMAMazing/DailyCodeYT
 Description: A script for making my new series on coding everyday
 SHA: 962208d
@@ -82,7 +309,7 @@ Smething broke tho
 No README file found in this repository.
 --------------------
 
---- Commit 5 ---
+--- Commit 10 ---
 Repo: AMAMazing/gemini-computer-use
 Description: Free computer use, will probably cause an AI apocolypse so best to watch over it.
 SHA: 451f0ac
@@ -94,7 +321,7 @@ Enter Update
 No README file found in this repository.
 --------------------
 
---- Commit 6 ---
+--- Commit 11 ---
 Repo: AMAMazing/DailyCodeYT
 Description: A script for making my new series on coding everyday
 SHA: 3b71088
@@ -106,7 +333,7 @@ Alot of changes
 No README file found in this repository.
 --------------------
 
---- Commit 7 ---
+--- Commit 12 ---
 Repo: AMAMazing/gemini-computer-use
 Description: Free computer use, will probably cause an AI apocolypse so best to watch over it.
 SHA: 1d23b57
@@ -118,7 +345,7 @@ Attemptes
 No README file found in this repository.
 --------------------
 
---- Commit 8 ---
+--- Commit 13 ---
 Repo: AMAMazing/CommitJournal
 Description: This repo makes a nice sounding Journal of what you have commit on github since you've last run the code.
 SHA: 065925a
@@ -130,7 +357,7 @@ Added src and output folders to clean up the repo
 No README file found in this repository.
 --------------------
 
---- Commit 9 ---
+--- Commit 14 ---
 Repo: AMAMazing/CommitJournal
 Description: This repo makes a nice sounding Journal of what you have commit on github since you've last run the code.
 SHA: f5761fb
@@ -142,7 +369,7 @@ Progress
 No README file found in this repository.
 --------------------
 
---- Commit 10 ---
+--- Commit 15 ---
 Repo: AMAMazing/AMAMazing
 Description: My personal repo
 SHA: df4da89
@@ -240,7 +467,7 @@ const myTechStack = {
 
 --------------------
 
---- Commit 11 ---
+--- Commit 16 ---
 Repo: AMAMazing/optimisewait
 Description: A Python utility function for automated image detection and clicking using PyAutoGUI.
 SHA: 546a355
@@ -371,7 +598,7 @@ MIT License
 
 --------------------
 
---- Commit 12 ---
+--- Commit 17 ---
 Repo: AMAMazing/talktollm
 Description: Python library for using web interfaces with LLMs (Deepseek and Gemini).
 SHA: 2caad27
@@ -550,7 +777,7 @@ MIT
 
 --------------------
 
---- Commit 13 ---
+--- Commit 18 ---
 Repo: AMAMazing/SmartPaste
 Description: Paste anything, reliably. This Python library uses the system clipboard for cross-platform (Win/Mac/Linux) text input, ensuring emojis and complex characters work correctly. Automatically saves/restores clipboard. Ideal for GUI automation.
 SHA: efbd0c8
@@ -629,7 +856,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 --------------------
 
---- Commit 14 ---
+--- Commit 19 ---
 Repo: AMAMazing/SmartPaste
 Description: Paste anything, reliably. This Python library uses the system clipboard for cross-platform (Win/Mac/Linux) text input, ensuring emojis and complex characters work correctly. Automatically saves/restores clipboard. Ideal for GUI automation.
 SHA: 65e49bf
@@ -708,7 +935,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 --------------------
 
---- Commit 15 ---
+--- Commit 20 ---
 Repo: AMAMazing/SmartPaste
 Description: Paste anything, reliably. This Python library uses the system clipboard for cross-platform (Win/Mac/Linux) text input, ensuring emojis and complex characters work correctly. Automatically saves/restores clipboard. Ideal for GUI automation.
 SHA: 4816a8d
@@ -787,7 +1014,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 --------------------
 
---- Commit 16 ---
+--- Commit 21 ---
 Repo: AMAMazing/DailyCodeYT
 Description: A script for making my new series on coding everyday
 SHA: 9265c64
@@ -799,7 +1026,7 @@ For daily commit
 No README file found in this repository.
 --------------------
 
---- Commit 17 ---
+--- Commit 22 ---
 Repo: AMAMazing/CommitJournal
 Description: This repo makes a nice sounding Journal of what you have commit on github since you've last run the code.
 SHA: 121a947
@@ -811,7 +1038,7 @@ Done
 No README file found in this repository.
 --------------------
 
---- Commit 18 ---
+--- Commit 23 ---
 Repo: AMAMazing/CommitJournal
 Description: This repo makes a nice sounding Journal of what you have commit on github since you've last run the code.
 SHA: cca39e9
@@ -823,7 +1050,7 @@ Initial commit
 No README file found in this repository.
 --------------------
 
---- Commit 19 ---
+--- Commit 24 ---
 Repo: AMAMazing/DailyCodeYT
 Description: A script for making my new series on coding everyday
 SHA: bc8db40
@@ -835,7 +1062,7 @@ Working updates
 No README file found in this repository.
 --------------------
 
---- Commit 20 ---
+--- Commit 25 ---
 Repo: AMAMazing/DailyCodeYT
 Description: A script for making my new series on coding everyday
 SHA: 4c8d91b
@@ -847,7 +1074,7 @@ Bug but progress i think
 No README file found in this repository.
 --------------------
 
---- Commit 21 ---
+--- Commit 26 ---
 Repo: AMAMazing/DailyCodeYT
 Description: A script for making my new series on coding everyday
 SHA: c2ed719
@@ -859,7 +1086,7 @@ Before big update
 No README file found in this repository.
 --------------------
 
---- Commit 22 ---
+--- Commit 27 ---
 Repo: AMAMazing/autoleetcodetrack
 Description: No description available
 SHA: 69ad9d2
@@ -871,7 +1098,7 @@ DONE
 No README file found in this repository.
 --------------------
 
---- Commit 23 ---
+--- Commit 28 ---
 Repo: AMAMazing/AMAMazing
 Description: My personal repo
 SHA: 10e1891
@@ -969,7 +1196,7 @@ const myTechStack = {
 
 --------------------
 
---- Commit 24 ---
+--- Commit 29 ---
 Repo: AMAMazing/AMAMazing
 Description: My personal repo
 SHA: a665e65
@@ -1067,7 +1294,7 @@ const myTechStack = {
 
 --------------------
 
---- Commit 25 ---
+--- Commit 30 ---
 Repo: AMAMazing/Pacetype
 Description: A simple Python package to type text and emojis character-by-character with adjustable delays, using the clipboard for better compatibility.
 SHA: d2d5b94
@@ -1156,469 +1383,5 @@ Contributions, issues, and feature requests are welcome!
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
---------------------
-
---- Commit 26 ---
-Repo: AMAMazing/Pacetype
-Description: A simple Python package to type text and emojis character-by-character with adjustable delays, using the clipboard for better compatibility.
-SHA: f657c1d
-Date: 2025-04-05 12:03:48 UTC+11:00
-Message:
-0.2.0 | Big update
-
---- README ---
-# Pacetype 🐢
-
-[![PyPI version](https://badge.fury.io/py/pacetype.svg)](https://badge.fury.io/py/pacetype)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-Simulates typing text, including emojis and special characters, with adjustable delays for specific characters. Uses `pyautogui.typewrite()` for speed with standard characters and the clipboard for robust cross-platform compatibility with complex characters (like emojis) that often cause issues with direct key simulation.
-
-## 🤔 Why Pacetype?
-
-Automating keyboard input with libraries like `pyautogui` can be fast for standard text but tricky when dealing with emojis or complex Unicode characters. Direct key simulation (`pyautogui.typewrite`) doesn't always handle these complex characters correctly across different OSs and input methods. Conversely, simulating copy-paste for *every* character is reliable but slower.
-
-`pacetype` offers a hybrid approach:
-
-1.  It detects standard, printable characters and types them rapidly using `pyautogui.typewrite()`.
-2.  When it encounters a complex character (emoji, symbol, non-printable), it switches to the clipboard method:
-    *   Copies the single complex character to the system clipboard.
-    *   Simulates the standard "paste" keyboard shortcut (Ctrl+V or Cmd+V).
-    *   Waits for a specified `interval` (if provided) *only after pasting* a complex character.
-
-This hybrid method provides the speed of `typewrite` for normal text and the reliability of the clipboard for special characters.
-
-## 🚀 Installation
-
-```bash
-pip install pacetype
-```
-
-## ✨ Simple Usage
-
-Using pacetype is straightforward. Just import it and call it directly with the text you want to type.
-
-```python
-import pacetype
-import time
-
-# Give yourself a moment to switch to the target window
-print("Pacetyping in 3 seconds...")
-time.sleep(3)
-
-# Type text with complex characters. Delay only applies after 👋 and 🐢.
-# Standard characters are typed quickly.
-pacetype("Hello World! 👋 Fast standard text. Slow emoji... 🐢", interval=0.5)
-
-# Type text rapidly (no interval delay for clipboard pastes)
-pacetype("Typing emojis quickly! ✅🚀", interval=0.0)
-
-# Type standard text very fast (uses typewrite, interval is ignored)
-pacetype("This uses pyautogui.typewrite and is fast.", interval=0.5) # interval has no effect here
-
-print("Typing finished!")
-```
-
-### Key Points:
-
-*   **Hybrid Typing:** Standard characters are typed using the fast `pyautogui.typewrite(interval=0)`. Complex characters (emojis, etc.) are pasted via the clipboard.
-*   **Conditional Delay:** The `interval` argument (defaulting to `0.0`) applies *only* as a `time.sleep()` pause *after* a complex character has been pasted using the clipboard. It does not affect the speed of standard character typing.
-*   **Clipboard for Complexity:** The clipboard method ensures greater reliability for emojis and a wide range of special characters that `typewrite` might fail on.
-
-## ⚙️ Features
-
-*   **Hybrid Typing:** Fast typing for standard text, reliable clipboard pasting for complex characters.
-*   **Emoji & Unicode Support:** Reliably types emojis and complex characters via the clipboard.
-*   **Conditional Delay:** Control paste speed for complex characters with the optional `interval` argument.
-*   **Simple Callable API:** Just `import pacetype` and use `pacetype("your text", interval=...)`.
-*   **Cross-Platform:** Works on Windows, macOS, and Linux (thanks to `pyperclip` and `pyautogui`).
-
-## ⚠️ Important Notes
-
-*   **Window Focus:** The target application window (e.g., text editor, browser, chat) must have keyboard focus when `pacetype()` is executing.
-*   **Clipboard Use:** Pacetype uses the system clipboard when pasting complex characters. Any content you manually copy while it's pasting such a character might be overwritten. The clipboard will contain the last complex character pasted after the script finishes. Standard typing does not affect the clipboard.
-*   **Keyboard Shortcuts:** Assumes standard `Ctrl+V` (Windows/Linux) or `Cmd+V` (macOS) paste shortcuts are active.
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
---------------------
-
---- Commit 27 ---
-Repo: AMAMazing/Pacetype
-Description: A simple Python package to type text and emojis character-by-character with adjustable delays, using the clipboard for better compatibility.
-SHA: 6773511
-Date: 2025-04-05 11:36:18 UTC+11:00
-Message:
-0.1.0 | Initial
-
---- README ---
-# Pacetype 🐢
-
-[![PyPI version](https://badge.fury.io/py/pacetype.svg)](https://badge.fury.io/py/pacetype)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-Simulates typing text, including emojis and special characters, with adjustable delays for specific characters. Uses `pyautogui.typewrite()` for speed with standard characters and the clipboard for robust cross-platform compatibility with complex characters (like emojis) that often cause issues with direct key simulation.
-
-## 🤔 Why Pacetype?
-
-Automating keyboard input with libraries like `pyautogui` can be fast for standard text but tricky when dealing with emojis or complex Unicode characters. Direct key simulation (`pyautogui.typewrite`) doesn't always handle these complex characters correctly across different OSs and input methods. Conversely, simulating copy-paste for *every* character is reliable but slower.
-
-`pacetype` offers a hybrid approach:
-
-1.  It detects standard, printable characters and types them rapidly using `pyautogui.typewrite()`.
-2.  When it encounters a complex character (emoji, symbol, non-printable), it switches to the clipboard method:
-    *   Copies the single complex character to the system clipboard.
-    *   Simulates the standard "paste" keyboard shortcut (Ctrl+V or Cmd+V).
-    *   Waits for a specified `interval` (if provided) *only after pasting* a complex character.
-
-This hybrid method provides the speed of `typewrite` for normal text and the reliability of the clipboard for special characters.
-
-## 🚀 Installation
-
-```bash
-pip install pacetype
-```
-
-## ✨ Simple Usage
-
-Using pacetype is straightforward. Just import it and call it directly with the text you want to type.
-
-```python
-import pacetype
-import time
-
-# Give yourself a moment to switch to the target window
-print("Pacetyping in 3 seconds...")
-time.sleep(3)
-
-# Type text with complex characters. Delay only applies after 👋 and 🐢.
-# Standard characters are typed quickly.
-pacetype("Hello World! 👋 Fast standard text. Slow emoji... 🐢", interval=0.5)
-
-# Type text rapidly (no interval delay for clipboard pastes)
-pacetype("Typing emojis quickly! ✅🚀", interval=0.0)
-
-# Type standard text very fast (uses typewrite, interval is ignored)
-pacetype("This uses pyautogui.typewrite and is fast.", interval=0.5) # interval has no effect here
-
-print("Typing finished!")
-```
-
-### Key Points:
-
-*   **Hybrid Typing:** Standard characters are typed using the fast `pyautogui.typewrite(interval=0)`. Complex characters (emojis, etc.) are pasted via the clipboard.
-*   **Conditional Delay:** The `interval` argument (defaulting to `0.0`) applies *only* as a `time.sleep()` pause *after* a complex character has been pasted using the clipboard. It does not affect the speed of standard character typing.
-*   **Clipboard for Complexity:** The clipboard method ensures greater reliability for emojis and a wide range of special characters that `typewrite` might fail on.
-
-## ⚙️ Features
-
-*   **Hybrid Typing:** Fast typing for standard text, reliable clipboard pasting for complex characters.
-*   **Emoji & Unicode Support:** Reliably types emojis and complex characters via the clipboard.
-*   **Conditional Delay:** Control paste speed for complex characters with the optional `interval` argument.
-*   **Simple Callable API:** Just `import pacetype` and use `pacetype("your text", interval=...)`.
-*   **Cross-Platform:** Works on Windows, macOS, and Linux (thanks to `pyperclip` and `pyautogui`).
-
-## ⚠️ Important Notes
-
-*   **Window Focus:** The target application window (e.g., text editor, browser, chat) must have keyboard focus when `pacetype()` is executing.
-*   **Clipboard Use:** Pacetype uses the system clipboard when pasting complex characters. Any content you manually copy while it's pasting such a character might be overwritten. The clipboard will contain the last complex character pasted after the script finishes. Standard typing does not affect the clipboard.
-*   **Keyboard Shortcuts:** Assumes standard `Ctrl+V` (Windows/Linux) or `Cmd+V` (macOS) paste shortcuts are active.
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
---------------------
-
---- Commit 28 ---
-Repo: AMAMazing/talktollm
-Description: Python library for using web interfaces with LLMs (Deepseek and Gemini).
-SHA: db3eb8f
-Date: 2025-04-05 11:19:52 UTC+11:00
-Message:
-Updates
-
---- README ---
-# talktollm
-
-[![PyPI version](https://badge.fury.io/py/talktollm.svg)](https://badge.fury.io/py/talktollm)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-A Python utility for interacting with large language models (LLMs) through a command-line interface. It leverages image recognition to automate interactions with LLM web interfaces, enabling seamless conversations and task execution.
-
-## Features
-
--   **Command-Line Interaction:** Provides a simple and intuitive command-line interface for interacting with LLMs.
--   **Automated Image Recognition:** Employs image recognition techniques (via `optimisewait`) to identify and interact with elements on the LLM interface. Includes fallback if `optimisewait` is not installed.
--   **Multi-LLM Support:** Currently supports DeepSeek and Gemini.
--   **Automated Conversations:** Facilitates automated conversations and task execution by simulating user interactions.
--   **Image Support:** Allows sending images (base64 encoded) to the LLM.
--   **Robust Clipboard Handling:** Includes configurable retry mechanisms (default 5 retries) for setting text/images to the clipboard and reading text from the clipboard to handle access errors and timing issues.
--   **Dynamic Image Path Management:** Copies necessary recognition images to a temporary directory, ensuring they are accessible and up-to-date.
--   **Easy to use:** Designed for simple setup and usage.
-
-## Core Functionality
-
-The core function is `talkto(llm, prompt, imagedata=None, debug=False, tabswitch=True, read_retries=5, read_delay=0.3)`.
-
-**Arguments:**
-
--   `llm` (str): The LLM name ('deepseek' or 'gemini').
--   `prompt` (str): The text prompt.
--   `imagedata` (list[str] | None): Optional list of base64 encoded image strings (e.g., "data:image/png;base64,...").
--   `debug` (bool): Enable detailed console output. Defaults to `False`.
--   `tabswitch` (bool): Switch focus back to the previous window after closing the LLM tab. Defaults to `True`.
--   `read_retries` (int): Number of attempts to read the final response from the clipboard. Defaults to 5.
--   `read_delay` (float): Delay in seconds between clipboard read attempts. Defaults to 0.3.
-
-**Steps:**
-
-1.  Validates the LLM name.
-2.  Sets up image paths for `optimisewait` using `set_image_path`.
-3.  Opens the LLM's website in a new browser tab.
-4.  Waits and clicks the message input area using `optimiseWait('message', clicks=2)`.
-5.  If `imagedata` is provided:
-    -   Iterates through images.
-    -   Sets each image to the clipboard using `set_clipboard_image` (with retries).
-    -   Pastes the image (`Ctrl+V`).
-    -   Waits for potential upload (`sleep(7)`).
-6.  Sets the `prompt` text to the clipboard using `set_clipboard` (with retries).
-7.  Pastes the prompt (`Ctrl+V`).
-8.  Waits and clicks the 'run' button using `optimiseWait('run')`.
-9.  Waits for the response generation, using `optimiseWait('copy')` as an indicator that the response is ready and the copy button is visible.
-10. Waits briefly (`sleep(0.5)`) after `optimiseWait('copy')` clicks the copy button.
-11. Closes the browser tab (`Ctrl+W`).
-12. Switches focus back if `tabswitch` is `True` (`Alt+Tab`).
-13. Attempts to read the LLM's response from the clipboard with retry logic (`read_retries`, `read_delay`).
-14. Returns the retrieved text response, or an empty string if reading fails.
-
-## Helper Functions
-
-**Clipboard Handling:**
-
--   `set_clipboard(text: str, retries: int = 5, delay: float = 0.2)`: Sets text to the clipboard, handling `CF_UNICODETEXT`. Retries on common access errors (`winerror 5` or `1418`).
--   `set_clipboard_image(image_data: str, retries: int = 5, delay: float = 0.2)`: Sets a base64 encoded image to the clipboard (`CF_DIB` format). Decodes, converts to BMP, and retries on common access errors.
-
-**Image Path Management:**
-
--   `set_image_path(llm: str, debug: bool = False)`: Orchestrates copying images.
--   `copy_images_to_temp(llm: str, debug: bool = False)`: Copies necessary `.png` images for the specified `llm` from the package's `images/<llm>` directory to a temporary location (`%TEMP%\\talktollm_images\\<llm>`). Creates the temporary directory if needed and only copies if the source file is newer or the destination doesn't exist. Sets the `optimisewait` autopath. Includes error handling for missing package resources.
-
-## Installation
-
-```
-pip install talktollm
-```
-
-*Note: Requires `optimisewait` for image recognition. Install separately if needed (`pip install optimisewait`).*
-
-## Usage
-
-Here are some examples of how to use `talktollm`.
-
-**Example 1: Simple Text Prompt**
-
-Send a basic text prompt to Gemini.
-
-```python
-import talktollm
-
-prompt_text = "Explain quantum entanglement in simple terms."
-response = talktollm.talkto('gemini', prompt_text)
-print("--- Simple Gemini Response ---")
-print(response)
-```
-
-**Example 2: Text Prompt with Debugging**
-
-Send a text prompt and enable debugging output to see more details about the process.
-
-```python
-import talktollm
-
-prompt_text = "What are the main features of Python 3.12?"
-response = talktollm.talkto('deepseek', prompt_text, debug=True)
-print("--- DeepSeek Debug Response ---")
-print(response)
-```
-
-**Example 3: Preparing Image Data**
-
-Load an image file, encode it in base64, and format it correctly for the `imagedata` argument.
-
-```python
-import base64
-import io
-from PIL import Image
-
-# Load your image (replace 'path/to/your/image.png' with the actual path)
-try:
-    with open("path/to/your/image.png", "rb") as image_file:
-        # Encode to base64
-        encoded_string = base64.b64encode(image_file.read()).decode('utf-8')
-        # Format as a data URI
-        image_data_uri = f"data:image/png;base64,{encoded_string}"
-        print("Image prepared successfully!")
-        # You can now pass [image_data_uri] to the imagedata parameter
-except FileNotFoundError:
-    print("Error: Image file not found. Please check the path.")
-    image_data_uri = None
-except Exception as e:
-    print(f"Error processing image: {e}")
-    image_data_uri = None
-
-# This 'image_data_uri' variable holds the string needed for the next example
-```
-
-**Example 4: Text and Image Prompt**
-
-Send a text prompt along with a prepared image to Gemini. (Assumes `image_data_uri` was successfully created in Example 3).
-
-```python
-import talktollm
-
-# Assuming image_data_uri is available from the previous example
-if image_data_uri:
-    prompt_text = "Describe the main subject of this image."
-    response = talktollm.talkto(
-        'gemini',
-        prompt_text,
-        imagedata=[image_data_uri], # Pass the image data as a list
-        debug=True
-    )
-    print("--- Gemini Image Response ---")
-    print(response)
-else:
-    print("Skipping image example because image data is not available.")
-```
-
-## Dependencies
-
--   `pywin32`: For Windows API access (clipboard).
--   `pyautogui`: For GUI automation (keystrokes, potentially mouse if `optimisewait` fails).
--   `Pillow`: For image processing (opening, converting for clipboard).
--   `optimisewait` (Optional but Recommended): For robust image-based waiting and clicking.
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-## License
-
-MIT
-
---------------------
-
---- Commit 29 ---
-Repo: AMAMazing/Pacetype
-Description: A simple Python package to type text and emojis character-by-character with adjustable delays, using the clipboard for better compatibility.
-SHA: 9032e72
-Date: 2025-04-05 10:48:54 UTC+11:00
-Message:
-Initial commit
-
---- README ---
-# Pacetype 🐢
-
-[![PyPI version](https://badge.fury.io/py/pacetype.svg)](https://badge.fury.io/py/pacetype)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-Simulates typing text, including emojis and special characters, with adjustable delays for specific characters. Uses `pyautogui.typewrite()` for speed with standard characters and the clipboard for robust cross-platform compatibility with complex characters (like emojis) that often cause issues with direct key simulation.
-
-## 🤔 Why Pacetype?
-
-Automating keyboard input with libraries like `pyautogui` can be fast for standard text but tricky when dealing with emojis or complex Unicode characters. Direct key simulation (`pyautogui.typewrite`) doesn't always handle these complex characters correctly across different OSs and input methods. Conversely, simulating copy-paste for *every* character is reliable but slower.
-
-`pacetype` offers a hybrid approach:
-
-1.  It detects standard, printable characters and types them rapidly using `pyautogui.typewrite()`.
-2.  When it encounters a complex character (emoji, symbol, non-printable), it switches to the clipboard method:
-    *   Copies the single complex character to the system clipboard.
-    *   Simulates the standard "paste" keyboard shortcut (Ctrl+V or Cmd+V).
-    *   Waits for a specified `interval` (if provided) *only after pasting* a complex character.
-
-This hybrid method provides the speed of `typewrite` for normal text and the reliability of the clipboard for special characters.
-
-## 🚀 Installation
-
-```bash
-pip install pacetype
-```
-
-## ✨ Simple Usage
-
-Using pacetype is straightforward. Just import it and call it directly with the text you want to type.
-
-```python
-import pacetype
-import time
-
-# Give yourself a moment to switch to the target window
-print("Pacetyping in 3 seconds...")
-time.sleep(3)
-
-# Type text with complex characters. Delay only applies after 👋 and 🐢.
-# Standard characters are typed quickly.
-pacetype("Hello World! 👋 Fast standard text. Slow emoji... 🐢", interval=0.5)
-
-# Type text rapidly (no interval delay for clipboard pastes)
-pacetype("Typing emojis quickly! ✅🚀", interval=0.0)
-
-# Type standard text very fast (uses typewrite, interval is ignored)
-pacetype("This uses pyautogui.typewrite and is fast.", interval=0.5) # interval has no effect here
-
-print("Typing finished!")
-```
-
-### Key Points:
-
-*   **Hybrid Typing:** Standard characters are typed using the fast `pyautogui.typewrite(interval=0)`. Complex characters (emojis, etc.) are pasted via the clipboard.
-*   **Conditional Delay:** The `interval` argument (defaulting to `0.0`) applies *only* as a `time.sleep()` pause *after* a complex character has been pasted using the clipboard. It does not affect the speed of standard character typing.
-*   **Clipboard for Complexity:** The clipboard method ensures greater reliability for emojis and a wide range of special characters that `typewrite` might fail on.
-
-## ⚙️ Features
-
-*   **Hybrid Typing:** Fast typing for standard text, reliable clipboard pasting for complex characters.
-*   **Emoji & Unicode Support:** Reliably types emojis and complex characters via the clipboard.
-*   **Conditional Delay:** Control paste speed for complex characters with the optional `interval` argument.
-*   **Simple Callable API:** Just `import pacetype` and use `pacetype("your text", interval=...)`.
-*   **Cross-Platform:** Works on Windows, macOS, and Linux (thanks to `pyperclip` and `pyautogui`).
-
-## ⚠️ Important Notes
-
-*   **Window Focus:** The target application window (e.g., text editor, browser, chat) must have keyboard focus when `pacetype()` is executing.
-*   **Clipboard Use:** Pacetype uses the system clipboard when pasting complex characters. Any content you manually copy while it's pasting such a character might be overwritten. The clipboard will contain the last complex character pasted after the script finishes. Standard typing does not affect the clipboard.
-*   **Keyboard Shortcuts:** Assumes standard `Ctrl+V` (Windows/Linux) or `Cmd+V` (macOS) paste shortcuts are active.
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
---------------------
-
---- Commit 30 ---
-Repo: AMAMazing/DailyCodeYT
-Description: A script for making my new series on coding everyday
-SHA: 473d616
-Date: 2025-04-05 10:48:33 UTC+11:00
-Message:
-Minor updates
-
---- README ---
-No README file found in this repository.
 --------------------
 
